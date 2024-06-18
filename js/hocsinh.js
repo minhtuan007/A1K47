@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     var avt =  [
-        'url("./footage/hocsinh_footage/1.png")',
-        'url("./footage/hocsinh_footage/2.png")',
-        'url("./footage/hocsinh_footage/3.png")',
-        'url("./footage/hocsinh_footage/4.jpg")',
-        'url("./footage/hocsinh_footage/5.jpg")',
-        'url("./footage/hocsinh_footage/6.jpeg")',
-        'url("./footage/hocsinh_footage/7.jpg")',
-        'url("./footage/hocsinh_footage/8.png")',
-        'url("./footage/hocsinh_footage/9.jpg")',
-        'url("./footage/hocsinh_footage/10.jpg")',
+        'url("footage/hocsinh_footage/1.png")',
+        'url("footage/hocsinh_footage/2.png")',
+        'url("footage/hocsinh_footage/3.png")',
+        'url("footage/hocsinh_footage/4.jpg")',
+        'url("footage/hocsinh_footage/5.jpg")',
+        'url("footage/hocsinh_footage/6.jpeg")',
+        'url("footage/hocsinh_footage/7.jpg")',
+        'url("footage/hocsinh_footage/8.png")',
+        'url("footage/hocsinh_footage/9.jpg")',
+        'url("footage/hocsinh_footage/10.jpg")',
     ];
     var next = document.getElementById("next");
     var prev = document.getElementById("prev");
