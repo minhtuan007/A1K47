@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'url("footage/hocsinh_footage/9.jpg")',
         'url("footage/hocsinh_footage/10.jpg")',
     ];
+    // isitok?
     var next = document.getElementById("next");
     var prev = document.getElementById("prev");
     
