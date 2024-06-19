@@ -94,3 +94,7 @@ html, body {
     background: #ababab;
     color: #fff;
 }
+#logo:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+}
