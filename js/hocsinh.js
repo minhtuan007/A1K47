@@ -151,6 +151,9 @@ document.addEventListener('DOMContentLoaded', function() {
         birth.innerHTML = avt[avt_main].birth;
         mail.innerHTML = avt[avt_main].mail;
         phone.innerHTML = avt[avt_main].phone;
+        slogan.innerHTML = avt[avt_main].slogan
+
+        
     });
 
 
