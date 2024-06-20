@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         new Hocsinh('5', 'Phạm Mạnh Cường', '09/09/2006', 'url("footage/hocsinh_footage/5.jpg")', 'Thành cựu học sinh rồi nha cả vườn', '0987654321'),
         new Hocsinh('6', 'Trần Thị Thùy Dung', '26/10/2006', 'url(" ")', 'slogan', '0987654321'),
         new Hocsinh('7', 'Đào Xuân Anh Dũng', '01/10/2006', 'url("footage/hocsinh_footage/7.jpg")', 'Học im lặng, nhưng tinh thần vẫn sôi động', '0987654321'),
-        new Hocsinh('8', 'Phan Đăng Dũng', '29/11/2006', 'url("footage/hocsinh_footage/8.jpg")', '"Cuộc sống của mỗi người cũng giống như 1 trận đấu quyền anh, </br>chúng ta chỉ thực sự thất bại khi chúng ta từ chối đứng dậy..."', '0987654321'),
+        new Hocsinh('8', 'Phan Đăng Dũng', '29/11/2006', 'url("footage/hocsinh_footage/8.jpg")', '"Cuộc sống của mỗi người cũng giống như 1 trận đấu quyền anh, chúng ta chỉ thực sự thất bại khi chúng ta từ chối đứng dậy..."', '0987654321'),
         new Hocsinh('9', 'Trần Quang Dũng', '22/02/2006', 'url("footage/hocsinh_footage/09.JPG")', 'Học- Học nữa- Học mãi', '0987654321'),
         new Hocsinh('10', 'Phạm Thị Xuân Đan', '17/04/2006', 'url(" ")', 'slogan', '0987654321'),
         new Hocsinh('11', 'Vũ Bùi Thúy Hà', '05/07/2006', 'url("footage/hocsinh_footage/11.jpg")', 'Bạn biết điều tuyệt vời nhất của một tấm ảnh là gì không? Là nó sẽ không bao giờ thay đổi dù cho những người trong tấm ảnh đã đổi thay.', '0987654321'),
