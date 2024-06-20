@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         new Hocsinh('40', 'Phan Phương Thúy', '11/02/2006', 'url(" ")', 'Hãy tin vào bản thân mình và không bao giờ từ bỏ giấc mơ của mình', '0987654321'),
         new Hocsinh('41', 'Dương Bảo Trâm', '08/08/2006', 'url("")', 'slogan', '0987654321'),
         new Hocsinh('42', 'Nguyễn Huyền Trang', '15/12/2006', 'url("")', 'slogan', '0987654321'),
-        new Hocsinh('43', 'Đàm Minh Tuấn', '12/03/2006', 'url("")', 'slogan', '0987654321'),
+        new Hocsinh('43', 'Đàm Minh Tuấn', '12/03/2006', 'url("footage/hocsinh_footage/43.JPG")', '"Những thay đổi đơn thuần về lượng, đến một mức độ nhất định, sẽ chuyển hóa thành những sự khác nhau về chất "</br>  -Ph.Ăng-ghen-', '0987654321'),
         new Hocsinh('44', 'Nguyễn Như Tuệ', '05/02/2006', 'url("")', 'slogan', '0987654321'),
         new Hocsinh('45', 'Nguyễn Thị Thúy Xuân', '01/08/2006', 'url("")', 'slogan', '0987654321'),
     ];
