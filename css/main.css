@@ -391,6 +391,15 @@
   --toastify-color-progress-success: var(--toastify-color-success);
   --toastify-color-progress-warning: var(--toastify-color-warning);
   --toastify-color-progress-error: var(--toastify-color-error);
+  width:100%;
+  height: 100%;
+  background-image: url(../footage/bg_img.jpg);
+  background-repeat: no-repeat;
+  background-size:cover ;
+  background-position: bottom;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 :host,
 html {
@@ -428,12 +437,8 @@ a {
 }
 body {
   font-family: "Noto Sans JP", "Roboto Slab", "sans-serif";
-  background: rgb(207, 222, 243);
-  background: linear-gradient(
-    0deg,
-    rgba(207, 222, 243, 0.8) 60%,
-    rgba(133, 177, 255, 0.8) 100%
-  );
+  background-color: rgba(0,0,0,0.35);
+  
 }
 .mo {
   backdrop-filter: blur(10px);
@@ -461,10 +466,11 @@ li {
   border-bottom: 2px solid rgb(0, 0, 0, 0);
   size: 100%;
 }
-li:hover {
-  border-bottom: 2px solid rgb(0, 0, 0, 1);
+.navbar li:hover {
+  /* border-bottom: 2px solid rgb(0, 0, 0, 1); */
   transition: 0.3s ease-in-out;
   transform: scale(1.1);
+  /* box-sizing: border-box; */
 }
 #logo:hover {
   transform: scale(1.1);
