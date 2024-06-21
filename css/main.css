@@ -517,7 +517,7 @@ li {
   /* display: flex; */
   width: 658.125px;
   height: 300.469px;
-  transition: 4s;
+  transition: 2s ease-in;
   position: absolute;
   background-position: left 50% bottom 10%;
   background-size: cover;
