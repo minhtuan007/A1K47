@@ -6,107 +6,63 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <base href="https://minhtuan007.github.io/A1K47/">
+    <!-- <base href="http://127.0.0.1:5500/"> -->
+     
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/home.js"></script>
   </head>
   <body >
-    <div id="container" class="min-h-screen relative">
-      <header class="w-full relative z-30">
-        <div
-          id="navbar"
-          class="fixed top-0 w-full padding-scrollbar backdrop-blur-md"
-          style="
-            color: rgb(0, 0, 0);
-            background-color: rgba(118, 169, 236, 0.7);
-          "
-        >
-          <div
-            class="w-full top-0 padding-scrollbar backdrop-blur-md h-12 flex justify-between items-center border-gray-500"
-          >
-            <div class="h-[48px] w-[48px] flex items-center justify-center">
-                <a href="index.html" class="p-1 box-border">
-                    <img id="logo" src="./footage/logok47a1.jpg" alt="Logo A1K47" class="h-[90%] w-[90%] rounded-full cursor-pointer">
-                </a>
-            </div>
-            <ul class="navbar justify-center h-full w-full">
-              <li><a href="index.html">Trang chủ</a></li>
-              <li><a href="">Giáo viên</a></li>
-              <li><a href="hocsinh.html">Học sinh</a></li>
-              <li><a href="">Kho ảnh, video</a></li>
-              <li><a href="">Một số thứ khác</a></li>
+    <div  class="h-full w-full relative">
+      <div class="navbar  w-full h-[48px] fixed z-10 flex ">
+        <div class="h-[48px] w-[48px] flex items-center justify-center">
+            <a href="index.html" class="p-1 box-border">
+                <img id="logo" src="footage/logok47a1.jpg" alt="Logo A1K47" class="h-[90%] w-[90%] rounded-full cursor-pointer">
+            </a>
+        </div>
+        <div class="h-full w-full flex items-center justify-center">
+            <ul class="flex text-white">
+                <li class="mx-[10px]"><a href="index.html">Trang chủ</a></li>
+                <li class="mx-[10px]"><a href="">Giáo viên</a></li>
+                <li class="mx-[10px]"><a href="hocsinh.html">Học sinh</a></li>
+                <li class="mx-[10px]"><a href="">Kho ảnh, video</a></li>
+                <li class="mx-[10px]"><a href="">Một số thứ khác</a></li>
             </ul>
-          </div>
-        </div>
-        <div class="w-full"></div>
-      </header>
-      <div id="main" class="relative">
-        <div class="h-12"></div>
-        <div class="w-full h-full flex">
-          <div class="bg-red-500 w-1/3 h-full"></div>
-          <div class="bg-red-600 w-1/3 h-full">
-            <div class="justify-center flex-col items-center align-middle">
-              <h1 id="A1K47">A1K47</h1>
-              <h3>
-                A1K47 là niên khoá thứ 47 của trường THPT Quỳnh Lưu 4 được dẫn
-                dắt bởi giáo viên chủ nhiệm Lê Thị Hương
-              </h3>
-            </div>
-          </div>
-          <div class="bg-red-400 w-1/3 h-full">
-            busdam eveniet reiciendis facere nulla ad, sed neque fuga officiis
-            beatae soluta qui enim ea blanditiis quos est labore vero libero.
-            Vel aspernatur hic, eius voluptatum mollitia numquam nesciunt at rem
-            quo earum sunt laboriosam veniam quidem sapiente suscipit obcaecati.
-            Autem. l Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Fuga deleniti nulla officiis amet omnis aut, porro sed tenetur a?
-            Beatae a blanditiis alias? Labore, vel temporibus? Ducimus, porro,
-            voluptatum error voluptatem sint, facere illo architecto quis
-            incidunt minima necessitatibus quasi! Harum ducimus consequatur,
-            saepe tempora ex alias aperiam quis recusandae ipsum expedita
-            accusantium quo! Deserunt ipsum velit accusantium ratione iste id
-            eveniet ea ullam error odit, maxime quis eum vero reiciendis
-            nesciunt natus fuga blanditiis ipsam. Quaerat, id eum laborum
-            mollitia nam laboriosam architecto nulla cumque at reprehenderit
-            aliquam numquam non totam dolores sit fugit ducimus ea veniam unde
-            consequatur.
-          </div>
         </div>
       </div>
+      <div id="main" class="h-full w-full absolute flex">
+        <div class="h-full w-[65%]">
+          <div class="h-[40%] w-full flex flex-col items-center justify-center text-white">
+            <span class="text-[100px] mt-[40px]">A1K47</span>
+            <span class="text-[30px]">Niên khoá 2021-2023</span>
+          </div>
+          <div class="h-[60%] w-full flex flex-row items-center justify-center">
+            <div class="h-[80%] w-[75%] mb-5 bg-blue-500 rounded-3xl"></div>
+          </div>
+        </div>
+        <div class="h-full w-[35%]">
+          <div class="h-[80%] w-full flex items-end justify-center ">
+            <div class="GVCN h-[80%] w-[60%] "></div>
+          </div>
+          <div class="h-[20%] w-full flex flex-col items-center justify-start pt-5 box-border text-white">
+            <span>Chủ nhiệm</span>
+            <span>Cô Lê Thị Hương</span>
+          </div>
+        </div>
+      </div>  
     </div>
-    <footer>
-      <div class="h-[55px] w-full bg-[#3c3b39] text-white flex flex-col justify-center items-center">
-        <div><span class="h-[25px]">DevBy</span></div>
-        <div class="h-[30px] flex ">
-          <a href="" class="h-full flex ">
-            <img class="h-full" src="./footage/facebook-circle.png" />
-            <span class="h-full">Minh Tuấn</span>
-          </a>
-          <a href="" class="h-full flex mx-8">
-            <img class="h-full" src="./footage/facebook-circle.png" />
-            <span class="h-full">TNHH</span>
-          </a>
-        </div>
+    <footer class="h-[55px] w-full bg-[#3c3b39] text-white flex flex-col justify-center items-center">
+      <div><span class="h-[25px]">DevBy</span></div>
+      <div class="h-[30px] flex ">
+        <a href="" class="h-full flex ">
+          <img class="h-full" src="footage/facebook-circle.png" />
+          <span class="h-full">Minh Tuấn</span>
+        </a>
+        <a href="" class="h-full flex mx-8">
+          <img class="h-full" src="footage/facebook-circle.png" />
+          <span class="h-full">TNHH</span>
+        </a>
       </div>
-
-      <!-- <div
-        id="footer"
-        class="bg-blue-800 w-full h-[30vh] flex flex-col justify-between"
-      >
-        <div id="fb" class="justify-center align-middle flex">
-          <div class="footer__links">
-            <div class="w-10 h-10 justify-start">
-              <li id="fb-icon">
-                <img src="./footage/facebook-circle.png" />
-              </li>
-            </div>
-            <li>
-              <a href="https://fb.com" target="_blank" id="link-fb">Facebook</a>
-            </li>
-          </div>
-        </div>
-        <div class="h-px w-full bg-white"></div>
-        <div class="py-8 text-center">© Mtuan & tnhh</div>
-      </div> -->
-    </footer>
+    </footer>    
+    
   </body>
 </html>
