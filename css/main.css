@@ -505,12 +505,12 @@ li {
 }
 
 .GVCN{
-  background-image: url('../footage/GVCN.jfif');
-  background-position: right 40% bottom 50%;
+  background-image: url('../footage/GVCN3.jpg');
+  box-shadow: 3px 3px 10px rgba(0,0,0,1);
   background-size: cover;
   border-radius: 24px;
 }
-.slide{
+.container2{
   box-shadow: 3px 3px 10px rgba(0,0,0,1);
 }
 .child{
