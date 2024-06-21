@@ -1,10 +1,27 @@
-document.getElementById("fb-icon").addEventListener("click", function () {
-  document.getElementById("link-fb").click();
-});
-window.addEventListener("scroll", function () {
-  var navbar = document.getElementById("navbar");
-  if (window.scrollY > window.innerHeight * 0.05) {
-    navbar.style.backgroundImage =
-      "linear-gradient(to right, rgba(207, 222, 243, 0.8), rgba(133, 177, 255, 0.8))";
-  }
+document.addEventListener('DOMContentLoaded', function() {
+  var noibat = [
+    'url("footage/noibat/1.jpg")',
+    'url("footage/noibat/2.jpg")',
+    'url("footage/noibat/3.jpg")',
+    'url("footage/noibat/4.jpg")',
+    'url("footage/noibat/5.jpg")',
+  ]
+
+  document.getElementById("c3").style.backgroundImage = noibat[0];
+  document.getElementById("c4").style.backgroundImage = noibat[1];
+  document.getElementById("c5").style.backgroundImage = noibat[2];
+  var img_idx = 2;
+
+  function slider() {
+    var slide = document.querySelector('.slide');
+    var child = document.querySelectorAll('.child');
+    slide.appendChild(child[0]);
+    img_idx = (img_idx + 1) % noibat.length;
+    child[0].style.backgroundImage = noibat[img_idx];
+    
+    // console.log(child[0])
+  };
+  setInterval(slider, 4000);
+
+
 });

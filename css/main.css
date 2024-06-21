@@ -510,3 +510,32 @@ li {
   background-size: cover;
   border-radius: 24px;
 }
+.slide{
+  box-shadow: 3px 3px 10px rgba(0,0,0,1);
+}
+.child{
+  /* display: flex; */
+  width: 658.125px;
+  height: 300.469px;
+  transition: 4s;
+  position: absolute;
+  background-position: left 50% bottom 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.child:nth-child(1){
+  left:-1316.25px;
+}
+.child:nth-child(2){
+  left:-658.125px;
+
+}
+.child:nth-child(3){
+  left:0px
+}
+.child:nth-child(4){
+  left:658.125px;
+}
+.child:nth-child(5){
+  left:1316.25px;
+}
