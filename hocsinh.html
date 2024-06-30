@@ -7,7 +7,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <base href="https://minhtuan007.github.io/A1K47/">
+    <!-- <base href="https://minhtuan007.github.io/A1K47/"> -->
     <link rel="stylesheet" href="./css/hocsinh.css" />
     <script src="./js/hocsinh.js"></script>  
 </head>
@@ -21,12 +21,20 @@
                 </a>
             </div>
             <div class="h-full w-full flex items-center justify-center">
-                <ul class="flex text-white">
+                <ul class="nav_items flex text-white">
                     <li class="mx-[10px]"><a href="index.html">Trang chủ</a></li>
-                    <li class="mx-[10px]"><a href="">Giáo viên</a></li>
+                    <li class="undone mx-[10px]">
+                        <!-- <a href=""> -->
+                            Giáo viên
+                        <!-- </a> -->
+                    </li>
                     <li class="mx-[10px]"><a href="hocsinh.html">Học sinh</a></li>
-                    <li class="mx-[10px]"><a href="">Kho ảnh, video</a></li>
-                    <li class="mx-[10px]"><a href="">Một số thứ khác</a></li>
+                    <li class="mx-[10px]"><a href="video.html">Kho ảnh, video</a></li>
+                    <li class="undone mx-[10px]">
+                        <!-- <a href=""> -->
+                            Một số thứ khác
+                        <!-- </a> -->
+                    </li>
                 </ul>
             </div>
         </div>
@@ -39,8 +47,13 @@
                 <div class="info  ml-20 text-white">
                     <div id="name" class="name ">Nguyễn Thuận An</div>
                     <div class="birth">Ngày sinh:  <span id="birth" class="ml-6">19/05/2006</span></div>
-                    <div class="phone mt-5">Số điện thoại: <span id="phone" class="ml-1"></span></div>
-                    <div class="mail mt-5">Email: <span id="mail" class="ml-[3.75 rem]"></span></div>
+                    <div class="fb mt-5">Facebook: <a href="fb.com" id="fb" class="ml-1">fb.com</a></div>
+                    <div id="show_contact_info" class="cursor-pointer"><span id="contact_status">Xem liên lạc</span>
+                        <div id="contact_info" class="hidden">
+                            <div class="phone mt-5">Số điện thoại: <span id="phone" class="ml-1">0*********</span></div>
+                            <div class="mail mt-5">Email: <span id="mail" class="ml-[3.75 rem]">*****@gmail.com</span></div>
+                        </div>
+                    </div>  
                 </div>
             </div>
     
@@ -74,6 +87,17 @@
             <span class="h-full">TNHH</span>
           </a>
         </div>
-      </footer>    
+    </footer>  
+    <div class="notify">
+       <span id="notify_text" class="text-nowrap "> </span>
+    </div> 
+    <div id="contact" class=" h-[40vh] w-[60vh] rounded-2xl absolute top-[25%] left-[37%] bg-gray-950 text-white z-20 hidden flex-col justify-center items-center">
+         <form id="form" class="flex flex-col justify-center items-center">
+            <span>Nhập code để xem</span>
+            <input type="password" name="password" id="code_contact" class="w-[140%] mt-[20px] mb-[10px] rounded-lg text-black" placeholder="">
+            <button class="bg-white h-max w-max px-2 rounded-md text-black" type="submit">GỬI</button>
+         </form>
+         <span id="password_status" class="mt-3"></span>
+    </div>
 </body>
 </html>

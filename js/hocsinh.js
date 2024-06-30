@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
         new Hocsinh('44', 'Nguyễn Như Tuệ', '05/02/2006', 'url("")', 'slogan', '0987654321'),
         new Hocsinh('45', 'Nguyễn Thị Thúy Xuân', '01/08/2006', 'url("")', 'slogan', '0987654321'),
     ];
-    console.log(avt[0].pic)
 
     var next = document.getElementById("next");
     var prev = document.getElementById("prev");
@@ -63,6 +62,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var phone = document.getElementById("phone");
     var mail = document.getElementById("mail");
     var slogan = document.getElementById("slogan");
+    var undone = document.querySelectorAll(".undone");
+    var code_contact = document.getElementById("code_contact");
+    var form = document.getElementById("form");
+    var password_status = document.getElementById("password_status");
+    var contact_status = document.getElementById('contact_status');
     
     document.getElementById("avt_right").style.backgroundImage = avt[1].pic;
     document.getElementById("avt_right_sec").style.backgroundImage = avt[2].pic;
@@ -130,9 +134,43 @@ document.addEventListener('DOMContentLoaded', function() {
         birth.innerHTML = avt[avt_main].birth;
         mail.innerHTML = avt[avt_main].mail;
         phone.innerHTML = avt[avt_main].phone;
-        slogan.innerHTML = avt[avt_main].slogan
+        slogan.innerHTML = avt[avt_main].slogan; 
+    });
 
-        
+    undone.forEach(function(undone) {
+        undone.addEventListener('click', function() {
+            document.querySelector(".notify").classList.add('hidden_notify');
+            document.getElementById("notify_text").innerHTML = 'Tính năng đang được hoàn thiện, bạn chờ nhé!';
+            setTimeout(function() {
+                document.getElementById("notify_text").innerHTML = '';
+                document.querySelector(".notify").classList.remove('hidden_notify');
+            }, 2000);
+        });
+    });
+
+    var n = 0;
+    form.addEventListener('submit', function(event){
+        event.preventDefault();
+        if(code_contact.value === '1111'){
+            mail.innerHTML = avt[avt_main].mail;
+            phone.innerHTML = avt[avt_main].phone;
+            document.getElementById('contact').style.display = 'none';
+            document.getElementById('contact_info').style.display = 'block';
+        }else{
+            n = n+1;
+           password_status.innerHTML = 'Sai mật khẩu lần ' + n ;
+        }
+    });
+
+    contact_status.addEventListener('click', function(){
+        if(contact_status.innerText === 'Xem liên lạc'){
+            document.getElementById('contact').style.display = 'flex'
+            contact_status.innerText = 'Ẩn liên lạc'
+        }
+        else if(contact_status.innerText === 'Ẩn liên lạc'){
+            document.getElementById('contact_info').style.display = 'none'
+            contact_status.innerText = 'Xem liên lạc'
+        }
     });
 
 

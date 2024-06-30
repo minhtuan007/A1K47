@@ -1,0 +1,38 @@
+:root{
+    width:100%;
+    height: 100%;
+    background-image: url(../footage/bg_img.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: bottom;
+
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.35);
+}
+
+.navbar{
+    background-color: rgba(0,0,0,0.35);
+}
+
+.navbar li:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+#logo:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+}

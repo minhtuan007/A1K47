@@ -1,398 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Roboto+Slab:wght@500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Nabla&family=Roboto+Slab:wght@500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Nabla&family=Pixelify+Sans:wght@400..700&family=Roboto+Slab:wght@500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Dosis:wght@600&family=Nabla&family=Pixelify+Sans:wght@400..700&family=Roboto+Slab:wght@500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
-@font-face {
-  font-family: Google Sans;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
-    format("woff2");
-  unicode-range: U+0400-045f, U+0490-0491, U+04b0-04b1, U+2116;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaErENHsxJlGDuGo1OIlL3L8p9ULjtH.woff2)
-    format("woff2");
-  unicode-range: U+0370-03ff;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaErENHsxJlGDuGo1OIlL3L8pNULjtH.woff2)
-    format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01a0-01a1,
-    U+01af-01b0, U+1ea0-1ef9, U+20ab;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaErENHsxJlGDuGo1OIlL3L8pJULjtH.woff2)
-    format("woff2");
-  unicode-range: U+0100-024f, U+0259, U+1e??, U+2020, U+20a0-20ab, U+20ad-20cf,
-    U+2113, U+2c60-2c7f, U+a720-a7ff;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaErENHsxJlGDuGo1OIlL3L8pxULg.woff2)
-    format("woff2");
-  unicode-range: U+00??, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da,
-    U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+feff, U+fffd;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: italic;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaZrENHsxJlGDuGo1OIlL3L-m93OwBmO24p.woff2)
-    format("woff2");
-  unicode-range: U+0400-045f, U+0490-0491, U+04b0-04b1, U+2116;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: italic;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaZrENHsxJlGDuGo1OIlL3L-m93OwdmO24p.woff2)
-    format("woff2");
-  unicode-range: U+0370-03ff;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: italic;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaZrENHsxJlGDuGo1OIlL3L-m93OwtmO24p.woff2)
-    format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01a0-01a1,
-    U+01af-01b0, U+1ea0-1ef9, U+20ab;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: italic;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaZrENHsxJlGDuGo1OIlL3L-m93OwpmO24p.woff2)
-    format("woff2");
-  unicode-range: U+0100-024f, U+0259, U+1e??, U+2020, U+20a0-20ab, U+20ad-20cf,
-    U+2113, U+2c60-2c7f, U+a720-a7ff;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: italic;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaZrENHsxJlGDuGo1OIlL3L-m93OwRmOw.woff2)
-    format("woff2");
-  unicode-range: U+00??, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da,
-    U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+feff, U+fffd;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaZrENHsxJlGDuGo1OIlL3L-idxOwBmO24p.woff2)
-    format("woff2");
-  unicode-range: U+0400-045f, U+0490-0491, U+04b0-04b1, U+2116;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaZrENHsxJlGDuGo1OIlL3L-idxOwdmO24p.woff2)
-    format("woff2");
-  unicode-range: U+0370-03ff;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaZrENHsxJlGDuGo1OIlL3L-idxOwtmO24p.woff2)
-    format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01a0-01a1,
-    U+01af-01b0, U+1ea0-1ef9, U+20ab;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaZrENHsxJlGDuGo1OIlL3L-idxOwpmO24p.woff2)
-    format("woff2");
-  unicode-range: U+0100-024f, U+0259, U+1e??, U+2020, U+20a0-20ab, U+20ad-20cf,
-    U+2113, U+2c60-2c7f, U+a720-a7ff;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaZrENHsxJlGDuGo1OIlL3L-idxOwRmOw.woff2)
-    format("woff2");
-  unicode-range: U+00??, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da,
-    U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+feff, U+fffd;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaGrENHsxJlGDuGo1OIlL3Kwp5MKg.woff2)
-    format("woff2");
-  unicode-range: U+0400-045f, U+0490-0491, U+04b0-04b1, U+2116;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaGrENHsxJlGDuGo1OIlL3Nwp5MKg.woff2)
-    format("woff2");
-  unicode-range: U+0370-03ff;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaGrENHsxJlGDuGo1OIlL3Bwp5MKg.woff2)
-    format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01a0-01a1,
-    U+01af-01b0, U+1ea0-1ef9, U+20ab;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaGrENHsxJlGDuGo1OIlL3Awp5MKg.woff2)
-    format("woff2");
-  unicode-range: U+0100-024f, U+0259, U+1e??, U+2020, U+20a0-20ab, U+20ad-20cf,
-    U+2113, U+2c60-2c7f, U+a720-a7ff;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2)
-    format("woff2");
-  unicode-range: U+00??, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da,
-    U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+feff, U+fffd;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UabrENHsxJlGDuGo1OIlLU94Yt3CwZ-Pw.woff2)
-    format("woff2");
-  unicode-range: U+0400-045f, U+0490-0491, U+04b0-04b1, U+2116;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UabrENHsxJlGDuGo1OIlLU94YtwCwZ-Pw.woff2)
-    format("woff2");
-  unicode-range: U+0370-03ff;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UabrENHsxJlGDuGo1OIlLU94Yt8CwZ-Pw.woff2)
-    format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01a0-01a1,
-    U+01af-01b0, U+1ea0-1ef9, U+20ab;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UabrENHsxJlGDuGo1OIlLU94Yt9CwZ-Pw.woff2)
-    format("woff2");
-  unicode-range: U+0100-024f, U+0259, U+1e??, U+2020, U+20a0-20ab, U+20ad-20cf,
-    U+2113, U+2c60-2c7f, U+a720-a7ff;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UabrENHsxJlGDuGo1OIlLU94YtzCwY.woff2)
-    format("woff2");
-  unicode-range: U+00??, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da,
-    U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+feff, U+fffd;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UabrENHsxJlGDuGo1OIlLV154t3CwZ-Pw.woff2)
-    format("woff2");
-  unicode-range: U+0400-045f, U+0490-0491, U+04b0-04b1, U+2116;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UabrENHsxJlGDuGo1OIlLV154twCwZ-Pw.woff2)
-    format("woff2");
-  unicode-range: U+0370-03ff;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UabrENHsxJlGDuGo1OIlLV154t8CwZ-Pw.woff2)
-    format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01a0-01a1,
-    U+01af-01b0, U+1ea0-1ef9, U+20ab;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UabrENHsxJlGDuGo1OIlLV154t9CwZ-Pw.woff2)
-    format("woff2");
-  unicode-range: U+0100-024f, U+0259, U+1e??, U+2020, U+20a0-20ab, U+20ad-20cf,
-    U+2113, U+2c60-2c7f, U+a720-a7ff;
-}
-
-@font-face {
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/googlesans/v27/4UabrENHsxJlGDuGo1OIlLV154tzCwY.woff2)
-    format("woff2");
-  unicode-range: U+00??, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da,
-    U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+feff, U+fffd;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_epG3gTD_u50.woff2)
-    format("woff2");
-  unicode-range: U+0460-052f, U+1c80-1c88, U+20b4, U+2de0-2dff, U+a640-a69f,
-    U+fe2e-fe2f;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_epG3g3D_u50.woff2)
-    format("woff2");
-  unicode-range: U+0400-045f, U+0490-0491, U+04b0-04b1, U+2116;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_epG3gbD_u50.woff2)
-    format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01a0-01a1,
-    U+01af-01b0, U+1ea0-1ef9, U+20ab;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_epG3gfD_u50.woff2)
-    format("woff2");
-  unicode-range: U+0100-024f, U+0259, U+1e??, U+2020, U+20a0-20ab, U+20ad-20cf,
-    U+2113, U+2c60-2c7f, U+a720-a7ff;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_epG3gnD_g.woff2)
-    format("woff2");
-  unicode-range: U+00??, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da,
-    U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+feff, U+fffd;
-} */
 :root {
-  /* --primary-color: #8263a3;
-  --text-dark: #232637;
-  --white: #ffffff;
-  --max-width: 1200px;
-  --scrollbar-width: calc(100vw - 100%);
-  --toastify-color-light: #fff;
-  --toastify-color-dark: #121212;
-  --toastify-color-info: #3498db;
-  --toastify-color-success: #07bc0c;
-  --toastify-color-warning: #f1c40f;
-  --toastify-color-error: #e74c3c;
-  --toastify-color-transparent: hsla(0, 0%, 100%, 0.7);
-  --toastify-icon-color-info: var(--toastify-color-info);
-  --toastify-icon-color-success: var(--toastify-color-success);
-  --toastify-icon-color-warning: var(--toastify-color-warning);
-  --toastify-icon-color-error: var(--toastify-color-error);
-  --toastify-toast-width: 320px;
-  --toastify-toast-background: #fff;
-  --toastify-toast-min-height: 64px;
-  --toastify-toast-max-height: 800px;
-  --toastify-font-family: sans-serif;
-  --toastify-z-index: 9999;
-  --toastify-text-color-light: #757575;
-  --toastify-text-color-dark: #fff;
-  --toastify-text-color-info: #fff;
-  --toastify-text-color-success: #fff;
-  --toastify-text-color-warning: #fff;
-  --toastify-text-color-error: #fff;
-  --toastify-spinner-color: #616161;
-  --toastify-spinner-color-empty-area: #e0e0e0;
-  --toastify-color-progress-light: linear-gradient(
-    90deg,
-    #4cd964,
-    #5ac8fa,
-    #007aff,
-    #34aadc,
-    #5856d6,
-    #ff2d55
-  );
-  --toastify-color-progress-dark: #bb86fc;
-  --toastify-color-progress-info: var(--toastify-color-info);
-  --toastify-color-progress-success: var(--toastify-color-success);
-  --toastify-color-progress-warning: var(--toastify-color-warning);
-  --toastify-color-progress-error: var(--toastify-color-error); */
-  /* width:100%;
-  height: 100%; */
   background-image: url(../footage/bg_img.jpg);
   background-repeat: no-repeat;
   background-size:cover ;
@@ -401,71 +7,32 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
-/* :host,
-html {
-  line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  font-family: Google Sans, ui-sans-serif, system-ui, -apple-system,
-    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
-    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
-    Noto Color Emoji;
-  font-feature-settings: normal;
-  font-variation-settings: normal;
-  -webkit-tap-highlight-color: transparent;
-} */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* .btn {
-  position: absolute;
-  padding: 1rem 2rem;
-  outline: none;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-} */
-
 a {
   text-decoration: none;
   transition: 0.3s;
 }
+
 body {
-  /* font-family: "Noto Sans JP", "Roboto Slab", "sans-serif"; */
   background-color: rgba(0,0,0,0.35);
   
 }
-/* .mo {
-  backdrop-filter: blur(10px);
-} */
-/* #header {
-  display: block;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  background-color: rgb(207, 222, 243);
-  background: rgb(207, 222, 243);
-  background: linear-gradient(
-    90deg,
-    rgba(207, 222, 243, 1) 100%,
-    rgb(96, 153, 252) 60%
-  );
-  height: 48px;
-  backdrop-filter: blur(10px);
-} */
+
 .navbar {
-  /* padding-top: 12px; */
   display: flex;
   justify-content: center;
-  /* gap: 2rem; */
   background-color: rgba(0,0,0,0.35);
 }
 
@@ -474,32 +41,24 @@ li {
   border-bottom: 2px solid rgb(0, 0, 0, 0);
   size: 100%;
 }
+
 .navbar li:hover {
-  /* border-bottom: 2px solid rgb(0, 0, 0, 1); */
   transition: 0.3s ease-in-out;
   transform: scale(1.1);
-  /* box-sizing: border-box; */
 }
+
 #logo:hover {
   transform: scale(1.1);
   transition: 0.1s ease-in-out;
 }
+
 #A1K47 {
   font-family: "corinthia", "sans-serif";
   font-weight: 400;
   font-size: 100px;
   color: aliceblue;
 }
-/* #footer {
-  background-color: #5096cc;
-}
-.footer__links {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-} */
+
 .padding-scrollbar {
   padding-right: calc(14px - var(--scrollbar-width));
 }
@@ -510,9 +69,11 @@ li {
   background-size: cover;
   border-radius: 24px;
 }
+
 .container2{
   box-shadow: 3px 3px 10px rgba(0,0,0,1);
 }
+
 .child{
   /* display: flex; */
   width: 658.125px;
