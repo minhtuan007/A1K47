@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
     undone.forEach(function(undone) {
         undone.addEventListener('click', function() {
             document.querySelector(".notify").classList.add('hidden_notify');
-            document.getElementById("notify_text").innerHTML = 'Tính năng đang được hoàn thiện, bạn chờ nhé!';
+            document.getElementById("notify_text").innerHTML = 'Tính năng đang được hoàn thiện, bạn chờ nhé <3';
             setTimeout(function() {
                 document.getElementById("notify_text").innerHTML = '';
                 document.querySelector(".notify").classList.remove('hidden_notify');
