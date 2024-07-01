@@ -64,9 +64,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var slogan = document.getElementById("slogan");
     var undone = document.querySelectorAll(".undone");
     var code_contact = document.getElementById("code_contact");
+    var key = '1111';
     var form = document.getElementById("form");
     var password_status = document.getElementById("password_status");
     var contact_status = document.getElementById('contact_status');
+    var close_contact = document.getElementById('close_contact');
     
     document.getElementById("avt_right").style.backgroundImage = avt[1].pic;
     document.getElementById("avt_right_sec").style.backgroundImage = avt[2].pic;
@@ -151,11 +153,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var n = 0;
     form.addEventListener('submit', function(event){
         event.preventDefault();
-        if(code_contact.value === '1111'){
+        if(code_contact.value === key){
             mail.innerHTML = avt[avt_main].mail;
             phone.innerHTML = avt[avt_main].phone;
             document.getElementById('contact').style.display = 'none';
             document.getElementById('contact_info').style.display = 'block';
+            contact_status.innerText = 'Ẩn liên lạc';
         }else{
             n = n+1;
            password_status.innerHTML = 'Sai mật khẩu lần ' + n ;
@@ -165,7 +168,6 @@ document.addEventListener('DOMContentLoaded', function() {
     contact_status.addEventListener('click', function(){
         if(contact_status.innerText === 'Xem liên lạc'){
             document.getElementById('contact').style.display = 'flex'
-            contact_status.innerText = 'Ẩn liên lạc'
         }
         else if(contact_status.innerText === 'Ẩn liên lạc'){
             document.getElementById('contact_info').style.display = 'none'
@@ -173,7 +175,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-
+    close_contact.addEventListener('click', function(){
+        document.getElementById('contact').style.display = 'none';
+    })
     
 });
 

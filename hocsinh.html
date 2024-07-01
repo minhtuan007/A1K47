@@ -41,17 +41,17 @@
             <!-- End NavBar -->
         
         <div class="h-full w-full relative flex">
-            <div class=" relative w-[calc(100%-40%-20px)] h-full flex flex-col justify-evenly">
-                <div id="slogan" class="slogan ml-10 pr-6 box-border text-white">Your goal should never be starting a company. Focus on the change you want to make
+            <div class=" relative w-[calc(100%-40%-20px)] h-full flex flex-col ">
+                <div id="slogan" class="slogan ml-10 pr-6 h-1/2 absolute items-center flex  box-border text-white">Your goal should never be starting a company. Focus on the change you want to make
                 </div>
-                <div class="info  ml-20 text-white">
+                <div class="info h-1/2 w-[95%] ml-10 absolute bottom-0 left-0  text-white">
                     <div id="name" class="name ">Nguyễn Thuận An</div>
                     <div class="birth">Ngày sinh:  <span id="birth" class="ml-6">19/05/2006</span></div>
                     <div class="fb mt-5">Facebook: <a href="fb.com" id="fb" class="ml-1">fb.com</a></div>
-                    <div id="show_contact_info" class="cursor-pointer"><span id="contact_status">Xem liên lạc</span>
+                    <div id="show_contact_info" class="cursor-pointer mt-5"><span id="contact_status">Xem liên lạc</span>
                         <div id="contact_info" class="hidden">
-                            <div class="phone mt-5">Số điện thoại: <span id="phone" class="ml-1">0*********</span></div>
-                            <div class="mail mt-5">Email: <span id="mail" class="ml-[3.75 rem]">*****@gmail.com</span></div>
+                            <div class="phone mt-2 ml-5">Số điện thoại: <span id="phone" class="ml-1">0*********</span></div>
+                            <div class="mail mt-2 ml-5">Email: <span id="mail" class="ml-[3.75 rem]">*****@gmail.com</span></div>
                         </div>
                     </div>  
                 </div>
@@ -92,7 +92,8 @@
        <span id="notify_text" class="text-nowrap "> </span>
     </div> 
     <div id="contact" class=" h-[40vh] w-[60vh] rounded-2xl absolute top-[25%] left-[37%] bg-gray-950 text-white z-20 hidden flex-col justify-center items-center">
-         <form id="form" class="flex flex-col justify-center items-center">
+         <div id="close_contact" class="text-red-500 absolute right-0 top-0 cursor-pointer ">x</div>
+        <form id="form" class="flex flex-col justify-center items-center">
             <span>Nhập code để xem</span>
             <input type="password" name="password" id="code_contact" class="w-[140%] mt-[20px] mb-[10px] rounded-lg text-black" placeholder="">
             <button class="bg-white h-max w-max px-2 rounded-md text-black" type="submit">GỬI</button>
