@@ -100,3 +100,37 @@ li {
 .child:nth-child(5){
   left:1316.25px;
 }
+
+@keyframes showing {
+  from{
+      height: 9vh;
+      width: 1px;
+  }
+  to{
+      height: 9vh;
+      width: 347.41px;    
+  }
+}
+
+.hidden_notify{
+  position: relative;
+  box-shadow: 3px 3px 10px rgb(0, 0, 0);
+  background-color: #030712;
+  z-index: 20;
+  padding: 0px 8px 0px 8px;
+  bottom: 144px;
+  left:28px;
+  border-radius: 12px;
+  color: white;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  height: 9vh;
+  width: max-content;
+  animation: showing 0.5s 1 ease-in-out ;
+}
+
+.nav_items{
+  cursor: pointer;
+}

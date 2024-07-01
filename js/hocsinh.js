@@ -64,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var slogan = document.getElementById("slogan");
     var undone = document.querySelectorAll(".undone");
     var code_contact = document.getElementById("code_contact");
-    var key = '1111';
     var form = document.getElementById("form");
     var password_status = document.getElementById("password_status");
     var contact_status = document.getElementById('contact_status');
@@ -151,6 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     var n = 0;
+    var key = '1111';
     form.addEventListener('submit', function(event){
         event.preventDefault();
         if(code_contact.value === key){

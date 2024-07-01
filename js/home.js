@@ -18,10 +18,19 @@ document.addEventListener('DOMContentLoaded', function() {
     slide.appendChild(child[0]);
     img_idx = (img_idx + 1) % noibat.length;
     child[0].style.backgroundImage = noibat[img_idx];
-    
-    // console.log(child[0])
   };
   setInterval(slider, 4000);
 
+  var undone = document.querySelectorAll(".undone");
+  undone.forEach(function(undone) {
+    undone.addEventListener('click', function() {
+        document.querySelector(".notify").classList.add('hidden_notify');
+        document.getElementById("notify_text").innerHTML = 'Tính năng đang được hoàn thiện, bạn chờ nhé <3';
+        setTimeout(function() {
+            document.getElementById("notify_text").innerHTML = '';
+            document.querySelector(".notify").classList.remove('hidden_notify');
+        }, 2000);
+    });
+});
 
 });
