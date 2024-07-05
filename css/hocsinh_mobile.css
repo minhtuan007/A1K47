@@ -1,0 +1,89 @@
+@media (max-width: 740px){
+
+
+    .nav_items {
+        display: none;
+        flex-direction: column;
+        border-right: 1px dashed white;
+    }
+
+    .navbar{
+        /* height: auto; */
+        transition: 0.5s;
+        overflow: hidden;
+        background-color: rgba(0,0,0,0.85);
+    }
+
+    #menu_mobile{
+        display: flex;
+        transition: 0.5s
+    }
+   
+    .logoA1{
+        transition: 0.5s;
+    }
+
+    .nav_items,
+    .nav_items > li{
+        width: 100%;
+    }
+
+    .navbar li:hover {
+        transition: 0.2s;
+        transform: translate(15px,0px);
+    }    
+
+    .main{
+        flex-direction: column-reverse;
+    }
+
+    .info_container,
+    .pic_container{
+        width: 100%;        
+    }
+
+    .pic_container{
+        justify-content: end;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+    .avt_container{
+        height:70%;
+    }
+
+    .info_container{
+        height: 30%;
+    }
+
+    #slogan{
+        height: max-content;
+        align-items: start;
+        text-wrap: wrap;
+        overflow: visible;
+    }
+
+    .info{
+        height: max-content;
+        text-wrap: wrap;
+        margin: 0px 20px 0px 20px;
+        box-sizing: border-box;
+    }
+
+    .dev{
+        position: relative;
+        bottom: 0;
+    }
+
+    .hocsinh{
+        display: block;
+    }
+
+    #distance{
+        height: 260px;
+    }
+    
+    .name{
+        font-size: 9vw;
+    }
+}
+

@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var password_status = document.getElementById("password_status");
     var contact_status = document.getElementById('contact_status');
     var close_contact = document.getElementById('close_contact');
+    var distance = document.getElementById('distance');
     
     document.getElementById("avt_right").style.backgroundImage = avt[1].pic;
     document.getElementById("avt_right_sec").style.backgroundImage = avt[2].pic;
@@ -107,6 +108,11 @@ document.addEventListener('DOMContentLoaded', function() {
         mail.innerHTML = avt[avt_main].mail;
         phone.innerHTML = avt[avt_main].phone;
         slogan.innerHTML = avt[avt_main].slogan
+
+        if (window.matchMedia("(max-width: 740px)").matches){
+            var h = document.getElementById("slogan").clientHeight + 277 - 221 + 60;
+            distance.style.height = `${h}`+'px';
+        }
     });
 
     prev.addEventListener('click', function(){
@@ -136,6 +142,11 @@ document.addEventListener('DOMContentLoaded', function() {
         mail.innerHTML = avt[avt_main].mail;
         phone.innerHTML = avt[avt_main].phone;
         slogan.innerHTML = avt[avt_main].slogan; 
+
+        if (window.matchMedia("(max-width: 740px)").matches){
+            var h = document.getElementById("slogan").clientHeight + 277 - 221 + 60;
+            distance.style.height = `${h}`+'px';
+        }
     });
 
     undone.forEach(function(undone) {
@@ -178,6 +189,26 @@ document.addEventListener('DOMContentLoaded', function() {
     close_contact.addEventListener('click', function(){
         document.getElementById('contact').style.display = 'none';
     })
+
+    var menu_mobile = document.getElementById('menu_mobile');
+    var t = 0;
+    menu_mobile.onclick = function(){
+        t = t + 1;
+        if(t%2){
+            document.querySelector('.nav_items').style.display = 'flex';
+            menu_mobile.style.rotate = '90deg';
+            document.querySelector('.logoA1').style.width = '0px';
+            document.querySelector('.navbar').style.height = '120px';
+            document.querySelector('.hocsinh').style.display = 'none';
+        }else{
+            document.querySelector('.nav_items').style.display = 'none';
+            menu_mobile.style.rotate = '0deg';
+            document.querySelector('.logoA1').style.width = '48px';
+            document.querySelector('.navbar').style.height = '48px';
+            document.querySelector('.hocsinh').style.display = 'block';
+
+        }
+    }
     
 });
 
