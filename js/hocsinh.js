@@ -170,6 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('contact').style.display = 'none';
             document.getElementById('contact_info').style.display = 'block';
             contact_status.innerText = 'Ẩn liên lạc';
+            document.querySelector('.main_2').style.zIndex = '0';
         }else{
             n = n+1;
            password_status.innerHTML = 'Sai mật khẩu lần ' + n ;
@@ -178,7 +179,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     contact_status.addEventListener('click', function(){
         if(contact_status.innerText === 'Xem liên lạc'){
-            document.getElementById('contact').style.display = 'flex'
+            document.getElementById('contact').style.display = 'flex';
+            document.querySelector('.main_2').style.zIndex = '50';
         }
         else if(contact_status.innerText === 'Ẩn liên lạc'){
             document.getElementById('contact_info').style.display = 'none'
@@ -188,6 +190,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     close_contact.addEventListener('click', function(){
         document.getElementById('contact').style.display = 'none';
+        document.querySelector('.main_2').style.zIndex = '0';
+
     })
 
     var menu_mobile = document.getElementById('menu_mobile');
