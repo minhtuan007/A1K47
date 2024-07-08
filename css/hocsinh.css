@@ -29,7 +29,8 @@ html, body {
     justify-content: space-evenly;
 }
 
-/* <div id="slogan" class="slogan ml-10 pr-6 h-1/2  items-center flex  box-border text-white"> */
+/* <div id="slogan" class="slogan ml-10 pr-6 h-1/2">Your goal should never be starting a company. Focus on the change you want to make */
+/* </div> */
 .slogan{
     font-family: "Playball", cursive;
     font-weight: 400;
@@ -44,6 +45,8 @@ html, body {
     display: flex;
     box-sizing: border-box;
     color: white;
+    margin-left: 40px;
+    padding-right: 24px;
 }
 .slogan::first-line{
     right:0px;   
@@ -167,6 +170,12 @@ html, body {
     position:relative; 
     display: flex;
     flex-direction: column;
+}
+
+/* <div class="info h-1/2 w-[95%] ml-10   text-white"> */
+.info{
+    width: 95%;
+    margin-left: 40px;
 }
 
 /* <div class="pic_container relative w-[calc(40%+20px)]  h-full flex flex-col items-center justify-center overflow-hidden "> */
