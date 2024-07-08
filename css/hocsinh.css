@@ -47,6 +47,7 @@ html, body {
     color: white;
     margin-left: 40px;
     padding-right: 24px;
+    height: 50%;
 }
 .slogan::first-line{
     right:0px;   

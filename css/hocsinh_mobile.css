@@ -57,7 +57,7 @@
         height: 30%;
     }
 
-    #slogan{
+    .slogan{
         height: max-content;
         align-items: start;
         text-wrap: wrap;
