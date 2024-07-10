@@ -80,6 +80,10 @@
         transform: translate(0px,-515px);
     }
 
+    .notify{
+        transform: translate(-20px,-270px);
+    }
+
     footer{
         margin-top: 270px;
     }
