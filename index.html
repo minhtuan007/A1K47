@@ -5,50 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <base href="https://minhtuan007.github.io/A1K47/">
     <!-- <base href="http://127.0.0.1:5500/"> -->
      
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main_mobile.css" />
     <script src="js/home.js"></script>
   </head>
   <body >
     <div  class="h-full w-full relative">
-      <div class="navbar  w-full h-[48px] fixed z-10 flex ">
-        <div class="h-[48px] w-[48px] flex items-center justify-center">
+          <!-- NavBar -->
+      <div class="navbar top-0 absolute w-full h-[48px] z-10 flex ">
+        <div class="logoA1 h-[48px] w-[48px] flex items-center justify-center">
             <a href="index.html" class="p-1 box-border">
-                <img id="logo" src="footage/logok47a1.jpg" alt="Logo A1K47" class="h-[90%] w-[90%] rounded-full cursor-pointer">
+                <img id="logo" src="./footage/logok47a1.jpg" alt="Logo A1K47" class="h-[90%] w-[90%] rounded-full cursor-pointer">
             </a>
         </div>
-        <div class="h-full w-full flex items-center justify-center">
-            <ul class="nav_items flex text-white">
-                <li class="mx-[10px]"><a href="index.html">Trang chủ</a></li>
-                <li class="undone mx-[10px]">
-                  <!-- <a href=""> -->
-                    Giáo viên
-                  <!-- </a> -->
-                </li>
-                <li class="mx-[10px]"><a href="hocsinh.html">Học sinh</a></li>
-                <li class="undone mx-[10px]">
-                  <!-- <a href="video.html"> -->
-                    Kho ảnh, video
-                  <!-- </a> -->
-                </li>
-                <li class="undone mx-[10px]">
-                  <!-- <a href=""> -->
-                    Một số thứ khác
-                  <!-- </a> -->
-                </li>
+        <div class="h-full w-full flex items-center justify-center max-[740px]:justify-start">
+            <div class="trangchu w-full text-center text-white mx-[10px]"><a href="hocsinh.html">Trang chủ</a>
+            </div>
+            <ul class="nav_items  text-white">
+                  <li class="mx-[10px]"><a href="index.html">Trang chủ</a></li>
+                  <li class="undone mx-[10px]">
+                      <!-- <a href=""> -->
+                          Giáo viên
+                      <!-- </a> -->
+                  </li>
+                  <li class="mx-[10px]"><a href="hocsinh.html">Học sinh</a></li>
+                  <li class="undone mx-[10px]">
+                      <!-- <a href="video.html"> -->
+                          Kho ảnh, video
+                      <!-- </a> -->
+                  </li>
+                  <li class="undone mx-[10px]">
+                      <!-- <a href=""> -->
+                          Một số thứ khác
+                      <!-- </a> -->
+                  </li>
             </ul>
-        </div>
+          </div>
+          <div id="menu_mobile" class="h-[48px] w-[48px] flex items-center justify-center cursor-pointer">
+              <i class="fa-solid fa-bars text-white"></i>
+          </div>
       </div>
-      <div id="main" class="h-full w-full absolute flex">
-        <div class="h-full w-[65%]">
-          <div class="h-[40%] w-full flex flex-col items-center justify-center text-white">
+          <!-- End NavBar -->
+      <div id="main">
+        <div class="container1">
+          <div class="text_container h-[40%] w-full flex flex-col items-center justify-center text-white">
             <span class="text-[100px] mt-[40px]">A1K47</span>
             <span class="text-[30px]">Niên khoá 2021-2023</span>
           </div>
           <div class="h-[60%] w-full flex flex-row items-center justify-center">
-            <div class="container2 h-[80%] w-[75%] mb-5 relative overflow-hidden rounded-3xl">
+            <div class="container2 mb-5 relative overflow-hidden rounded-3xl">
               <div class="slide h-full w-full mb-5  flex  ">
                 <div id="c1" class="child"></div>
                 <div id="c2" class="child"></div>
@@ -59,7 +68,7 @@
             </div>
           </div>
         </div>
-        <div class="h-full w-[35%]">
+        <div class="container_GVCN">
           <div class="h-[80%] w-full flex items-end justify-center ">
             <div class="GVCN h-[calc(80%+40px)] w-[calc(60%)] "></div>
           </div>
@@ -73,11 +82,11 @@
     <footer class="h-[55px] w-full bg-[#3c3b39] text-white flex flex-col justify-center items-center">
       <div><span class="h-[25px]">DevBy</span></div>
       <div class="h-[30px] flex ">
-        <a href="" class="h-full flex ">
+        <a href="https://www.facebook.com/minhtuank47" target="_blank" class="h-full flex ">
           <img class="h-full" src="footage/facebook-circle.png" />
           <span class="h-full">Minh Tuấn</span>
         </a>
-        <a href="" class="h-full flex mx-8">
+        <a href="https://www.facebook.com/tnhh.17506" target="_blank" class="h-full flex mx-8">
           <img class="h-full" src="footage/facebook-circle.png" />
           <span class="h-full">TNHH</span>
         </a>
@@ -85,6 +94,6 @@
     </footer>    
     <div class="notify">
       <span id="notify_text" class="text-nowrap "> </span>
-   </div> 
+   </div>
   </body>
 </html>

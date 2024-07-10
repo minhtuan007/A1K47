@@ -1,11 +1,14 @@
 :root {
-  background-image: url(../footage/bg_img.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+  url(../footage/bg_img.jpg);
   background-repeat: no-repeat;
   background-size:cover ;
   background-position: bottom;
+  background-attachment: fixed;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
 
 html, body {
@@ -14,21 +17,7 @@ html, body {
   padding: 0;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
-a {
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-body {
-  background-color: rgba(0,0,0,0.35);
-  
-}
 
 .navbar {
   display: flex;
@@ -36,11 +25,6 @@ body {
   background-color: rgba(0,0,0,0.35);
 }
 
-  
-li {
-  border-bottom: 2px solid rgb(0, 0, 0, 0);
-  size: 100%;
-}
 
 .navbar li:hover {
   transition: 0.3s ease-in-out;
@@ -59,9 +43,7 @@ li {
   color: aliceblue;
 }
 
-.padding-scrollbar {
-  padding-right: calc(14px - var(--scrollbar-width));
-}
+
 
 .GVCN{
   background-image: url('../footage/GVCN3.jpg');
@@ -70,17 +52,23 @@ li {
   border-radius: 24px;
 }
 
+/* <div class="container2 h-[80%] w-[75%] mb-5 relative overflow-hidden rounded-3xl"> */
 .container2{
   box-shadow: 3px 3px 10px rgba(0,0,0,1);
+  height: 80%;
+  width: 75%;
 }
 
 .child{
   /* display: flex; */
+  background-repeat: no-repeat;
+  background-size:cover ;
+  background-position: bottom;
   width: 658.125px;
-  height: 300.469px;
+  height: 100%;
   transition: 2s ease-in;
   position: absolute;
-  background-position: left 50% bottom 10%;
+  background-position: right 0 bottom 0;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -133,4 +121,42 @@ li {
 
 .nav_items{
   cursor: pointer;
+  display: flex;
 }
+
+/* <div id="main" class="h-full w-full absolute flex"> */
+#main{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+
+.trangchu{
+  display: none;
+}
+
+#menu_mobile{
+  display: none;
+}
+
+.container1{
+  height: 100%;
+  width: 65%;
+}
+
+.container_GVCN{
+  height: 100%;
+  width: 35%;
+}
+
+/* <div class="class_pic h-[60%] w-full flex flex-row items-center justify-center"> */
+.class_pic{
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+

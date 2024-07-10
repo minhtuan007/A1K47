@@ -15,6 +15,7 @@ html, body {
     padding: 0;
     overflow-x: hidden;
     background-color: rgba(0,0,0,0.35);
+    /* scroll-behavior: smooth; */
 }
 
 /* <div class="container1 h-full w-full relative flex flex-col justify-evenly"> */

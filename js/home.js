@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     img_idx = (img_idx + 1) % noibat.length;
     child[0].style.backgroundImage = noibat[img_idx];
   };
+  
   setInterval(slider, 4000);
 
   var undone = document.querySelectorAll(".undone");
@@ -32,5 +33,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 2000);
     });
 });
+
+
+var menu_mobile = document.getElementById('menu_mobile');
+var t = 0;
+menu_mobile.onclick = function(){
+    t = t + 1;
+    if(t%2){
+        document.querySelector('.nav_items').style.display = 'flex';
+        menu_mobile.style.rotate = '90deg';
+        document.querySelector('.logoA1').style.width = '0px';
+        document.querySelector('.navbar').style.height = '120px';
+        document.querySelector('.trangchu').style.display = 'none';
+    }else{
+        document.querySelector('.nav_items').style.display = 'none';
+        menu_mobile.style.rotate = '0deg';
+        document.querySelector('.logoA1').style.width = '48px';
+        document.querySelector('.navbar').style.height = '48px';
+        document.querySelector('.trangchu').style.display = 'block';
+
+    }
+}
 
 });
