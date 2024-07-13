@@ -2,9 +2,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   
   if (window.matchMedia("(max-width: 740px)").matches){
-    document.getElementById("fheight").style.marginTop =
-     `${document.getElementById("main").clientHeight - document.getElementById("body1").clientHeight + 5}` + 'px' ;
-}  
+     document.getElementById("slide_container").style.marginTop =
+     `${document.querySelector(".container_GVCN").clientHeight + document.querySelector(".text_container").clientHeight }` + 'px' ;
+
+     var n = Number(document.getElementById("slide_container").style.marginTop.slice(0, -2));
+     document.getElementById("fheight").style.marginTop =
+     `${n + document.getElementById("slide_container").clientHeight + 5}` + 'px';
+
+     console.log(`${n + document.getElementById("slide_container").clientHeight + 5}` + 'px')
+    }  
+    
   var noibat = [
     'url("footage/noibat/1.jpg")',
     'url("footage/noibat/2.jpg")',

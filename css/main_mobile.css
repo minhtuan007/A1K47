@@ -82,7 +82,9 @@
     }
     
     .text_container{
-        transform: translate(0px,-515px);
+        /* transform: translate(0px,-515px); */
+        position: absolute;
+        top: 0;
     }
 
     .notify{
@@ -90,7 +92,8 @@
     }
 
     footer{
-        margin-top: 300px;
+        position: absolute;
+        top: 0;
     }
 
     .child:nth-child(1){
@@ -108,6 +111,11 @@
       }
       .child:nth-child(5){
         left:790px;
+      }
+
+      #slide_container{
+        position: absolute;
+        top: 0;
       }
 
 }
