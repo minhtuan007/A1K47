@@ -95,5 +95,9 @@
     .name{
         font-size: 9vw;
     }
+
+    #contact{
+        transform: translate(0px,200px);
+    }
 }
 

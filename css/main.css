@@ -66,9 +66,9 @@ html, body {
   background-position: bottom;
   width: 658.125px;
   height: 100%;
-  transition: 2s ease-in;
+  transition: 0.5s ease-in;
   position: absolute;
-  background-position: right 0 bottom 0;
+  background-position: right 50% bottom 5%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -159,4 +159,3 @@ html, body {
   align-items: center;
   justify-content: center;
 }
-

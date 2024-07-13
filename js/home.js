@@ -5,6 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
     'url("footage/noibat/3.jpg")',
     'url("footage/noibat/4.jpg")',
     'url("footage/noibat/5.jpg")',
+    'url("footage/noibat/6.jpg")',
+    'url("footage/noibat/7.jpg")',
+    'url("footage/noibat/8.jpg")',
+    'url("footage/noibat/9.jpg")',
+    'url("footage/noibat/10.jpg")',
+    'url("footage/noibat/11.jpg")',
+    'url("footage/noibat/12.jpg")',
   ]
 
   document.getElementById("c3").style.backgroundImage = noibat[0];
@@ -19,8 +26,25 @@ document.addEventListener('DOMContentLoaded', function() {
     img_idx = (img_idx + 1) % noibat.length;
     child[0].style.backgroundImage = noibat[img_idx];
   };
+
+  setTimeout(slider,1000);
+  var intervalID = setInterval(slider, 4000);
+  var play = 0;
+  document.getElementById("play_pause").addEventListener('click', function(){
+    play = play + 1;
+    if(play%2 === 0){
+      slider();
+      intervalID = setInterval(slider, 4000);
+      document.getElementById("play").style.display = 'block';
+      document.getElementById("pause").style.display = 'none';
+    }else{
+      clearInterval(intervalID);
+      document.getElementById("play").style.display = 'none';
+      document.getElementById("pause").style.display = 'block';
+    }
+  });
   
-  setInterval(slider, 4000);
+
 
   var undone = document.querySelectorAll(".undone");
   undone.forEach(function(undone) {
