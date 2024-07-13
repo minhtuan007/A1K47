@@ -1,5 +1,9 @@
 @media (max-width: 740px){
 
+    body{
+        height: 100vh;
+    }
+
     .nav_items {
         display: none;
         flex-direction: column;

@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+  
+  if (window.matchMedia("(max-width: 740px)").matches){
+    document.getElementById("fheight").style.marginTop =
+     `${document.getElementById("main").clientHeight - document.getElementById("body1").clientHeight + 5}` + 'px' ;
+}  
   var noibat = [
     'url("footage/noibat/1.jpg")',
     'url("footage/noibat/2.jpg")',
