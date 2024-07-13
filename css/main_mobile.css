@@ -89,4 +89,21 @@
         margin-top: 300px;
     }
 
+    .child:nth-child(1){
+        left:-790px;
+      }
+      .child:nth-child(2){
+        left:-380px;
+      
+      }
+      .child:nth-child(3){
+        left:0px
+      }
+      .child:nth-child(4){
+        left:380px;
+      }
+      .child:nth-child(5){
+        left:790px;
+      }
+
 }
