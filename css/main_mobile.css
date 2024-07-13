@@ -97,7 +97,7 @@
     }
 
     .child:nth-child(1){
-        left:-790px;
+        left:-760px;
       }
       .child:nth-child(2){
         left:-380px;
@@ -110,7 +110,7 @@
         left:380px;
       }
       .child:nth-child(5){
-        left:790px;
+        left:760px;
       }
 
       #slide_container{
