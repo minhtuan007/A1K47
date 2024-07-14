@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   setTimeout(slider,1000);
-  var intervalID = setInterval(slider, 4000);
+  var intervalID = setInterval(slider, 3000);
   var play = 0;
   document.getElementById("play_pause").addEventListener('click', function(){
     play = play + 1;
