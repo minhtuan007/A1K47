@@ -85,6 +85,7 @@
         /* transform: translate(0px,-515px); */
         position: absolute;
         top: 0;
+        height: auto;
     }
 
     .notify{
@@ -116,6 +117,9 @@
       #slide_container{
         position: absolute;
         top: 0;
+        height: auto;
       }
+      
+
 
 }

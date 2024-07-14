@@ -159,3 +159,11 @@ html, body {
   align-items: center;
   justify-content: center;
 }
+
+#slide_container{
+  height: 60%;
+}
+
+.text_container{
+  height: auto;
+}

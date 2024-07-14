@@ -9,9 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
      document.getElementById("fheight").style.marginTop =
      `${n + document.getElementById("slide_container").clientHeight + 5}` + 'px';
 
-     console.log(`${n + document.getElementById("slide_container").clientHeight + 5}` + 'px')
     }  
-    
   var noibat = [
     'url("footage/noibat/1.jpg")',
     'url("footage/noibat/2.jpg")',
