@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     var n = 0;
-    var key = '1111';
+    var key = 'hsa1k47';
     form.addEventListener('submit', function(event){
         event.preventDefault();
         if(code_contact.value === key){
