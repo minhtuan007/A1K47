@@ -84,8 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("avt_left_sec").style.backgroundImage = avt[avt.length-2].pic;
     document.getElementById("avt_main").style.backgroundImage = avt[0].pic;
 
-    var avt_right_idx = 2;//anhr 2
-    var avt_left_idx = avt.length-2;//anhr cuối
+    var avt_right_idx = 2;
+    var avt_left_idx = avt.length-2;
     var avt_main = 0;
 
     next.addEventListener('click', function(){ 

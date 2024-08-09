@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     play = play + 1;
     if(play%2 === 0){
       slider();
-      intervalID = setInterval(slider, 4000);
+      intervalID = setInterval(slider, 3000);
       document.getElementById("play").style.display = 'block';
       document.getElementById("pause").style.display = 'none';
     }else{
