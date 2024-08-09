@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         new Hocsinh('35', 'Nguyễn Phi Tài', '02/04/2006', 'url("footage/hocsinh_footage/35.jpg")', 'a', 'a', '0a', 'a'),
         new Hocsinh('36', 'Trần Ngọc Tài', '10/10/2006', 'url("footage/hocsinh_footage/36.jpg")', 'Làm ơn đừng bắt đền nữaaaa </br>- Ths.Trần Ngọc Tài - ', 'https://www.facebook.com/profile.php?id=100070454085843', '0827005961', 'tranngoctai101020@gmail.com'),
         new Hocsinh('37', 'Hoàng Danh Thái', '12/07/2006', 'url("footage/hocsinh_footage/37.jpg")', 'ok', 'https://www.facebook.com/profile.php?id=100062670963312', '0971604746', 'thai9bqc@gmail.com'),
-        new Hocsinh('38', 'Hoàng Minh Thư', '26/05/2006', 'url("footage/hocsinh_footage/38.jpg")', '"Feel like Cinderella naega byeonhae"', 'https://www.facebook.com/h.m.t.2605', '0a', 'a'),
+        new Hocsinh('38', 'Hoàng Minh Thư', '26/05/2006', 'url("footage/hocsinh_footage/38.jpg")', '"Feel like Cinderella naega byeonhae"', 'https://www.facebook.com/h.m.t.2605', '0385087736', 'hoangminhthu26526@gmail.com'),
         new Hocsinh('39', 'Hồ Thị Thư', '24/01/2006', 'url("footage/hocsinh_footage/39.jpg")', 'Thời niên thiếu không thể quay lại ấy…', 'a', '0393499180', 'thuh67647@gmail.com'),
         new Hocsinh('40', 'Phan Phương Thuý', '02/11/2006', 'url("footage/hocsinh_footage/40.jpg")', 'Hãy tin vào bản thân mình và không bao giờ từ bỏ giấc mơ của mình', 'https://www.facebook.com/phuonggthuyy2912', '0969322792', 'phanphuongthuyyy@gmail.com'),
         new Hocsinh('41', 'Dương Bảo Trâm', '08/08/2006', 'url("footage/hocsinh_footage/41.jpg")', 'a', 'a', '0a', 'a'),
