@@ -1,58 +1,63 @@
 document.addEventListener('DOMContentLoaded', function() {
-    function Hocsinh(stt, name, birth, pic, slogan, phone){
+    function Hocsinh(stt, name, birth, pic, slogan, fb,  phone, mail, ytb){
         this.stt = stt;
         this.pic = pic;
         this.slogan = slogan;
         this.name = name;
         this. birth = birth;
         this.phone = phone;
+        this.mail = mail;
+        this.fb = fb;
+        this.ytb = ytb;
+        
     };
     var avt =  [
-        new Hocsinh('1', 'Nguyễn Thuận An', '19/05/2006', 'url("footage/hocsinh_footage/1.png")', 'Your goal should never be starting a company. Focus on the change you want to make', '0987654321'),
-        new Hocsinh('2', 'Lê Bùi Trâm Anh', '28/09/2006', 'url("footage/hocsinh_footage/2.png")', 'Dù có sai nhưng nếu có bản lĩnh thì sai cũng thành đúng. Thế giới này chỉ công nhận kẻ mạnh, không chấp nhận kẻ yếu', '0987654321'),
-        new Hocsinh('3', 'Nguyễn Quỳnh Anh', '12/08/2006', 'url("footage/hocsinh_footage/3.jpg")', 'Đậu NV1 điểm cao🍀🍀🍀', '0987654321'),
-        new Hocsinh('4', 'Hoàng Văn Chí', '10/08/2006', 'url("footage/hocsinh_footage/4.jpg")', 'c', '0987654321'),
-        new Hocsinh('5', 'Phạm Mạnh Cường', '09/09/2006', 'url("footage/hocsinh_footage/5.jpg")', 'Thành cựu học sinh rồi nha cả vườn', '0987654321'),
-        new Hocsinh('6', 'Trần Thị Thùy Dung', '26/10/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('7', 'Đào Xuân Anh Dũng', '01/10/2006', 'url("footage/hocsinh_footage/7.jpg")', 'Học im lặng, nhưng tinh thần vẫn sôi động', '0987654321'),
-        new Hocsinh('8', 'Phan Đăng Dũng', '29/11/2006', 'url("footage/hocsinh_footage/8.jpg")', '"Cuộc sống của mỗi người cũng giống như 1 trận đấu quyền anh, chúng ta chỉ thực sự thất bại khi chúng ta từ chối đứng dậy..."', '0987654321'),
-        new Hocsinh('9', 'Trần Quang Dũng', '22/02/2006', 'url("footage/hocsinh_footage/09.JPG")', 'Học- Học nữa- Học mãi', '0987654321'),
-        new Hocsinh('10', 'Phạm Thị Xuân Đan', '17/04/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('11', 'Vũ Bùi Thúy Hà', '05/07/2006', 'url("footage/hocsinh_footage/11.jpg")', 'Bạn biết điều tuyệt vời nhất của một tấm ảnh là gì không? Là nó sẽ không bao giờ thay đổi dù cho những người trong tấm ảnh đã đổi thay.', '0987654321'),
-        new Hocsinh('12', 'Hồ Xuân Hai', '20/09/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('13', 'Nguyễn Trường Hải', '04/11/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('14', 'Trần Nguyễn Hoàng Hải', '17/05/2006', 'url("footage/hocsinh_footage/14.JPG")', 'slogan', '0987654321'),
-        new Hocsinh('15', 'Nguyễn Thị Thanh Hằng', '01/09/2006', 'url("footage/hocsinh_footage/15.jpg")', 'Nỗ lực của bạn là dáng vẻ đẹp nhất, rực rỡ nhất', '0987654321'),
-        new Hocsinh('16', 'Nguyễn Thị Hồng Hạnh', '29/06/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('17', 'Trương Văn Hiệp', '28/07/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('18', 'Lê Huy Hiếu', '16/09/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('19', 'Hoàng Thị Thu Hương', '02/07/2006', 'url("footage/hocsinh_footage/19.JPG")', '"Muốn ra khỏi trường thật sớm </br>Cũng.... muốn chậm lại một chút "', '0987654321'),
-        new Hocsinh('20', 'Nguyễn Đăng Huy', '13/10/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('21', 'Nguyễn Đậu Quang Huy', '01/10/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('22', 'Trần Văn Khánh', '27/03/2006', 'url("footage/hocsinh_footage/22.jpeg")', 'Giàu vì bạn, sang vì vợ =)))', '0987654321'),
-        new Hocsinh('23', 'Thái Doãn Kiên', '18/11/2006', 'url("footage/hocsinh_footage/23.jpeg")', 'Nohope ', '0987654321'),
-        new Hocsinh('24', 'Ngô Phương Linh', '24/11/2006', 'url(" ")', 'Today is bad. Tomorrow will be worse but the day after tomorrow will be sunshine', '0987654321'),
-        new Hocsinh('25', 'Hồ Bá Lương', '01/06/2006', 'url("footage/hocsinh_footage/25.jpg")', '12 năm ăn học để rồi cố gắng đỗ nv1, và lúc đỗ được ngành này mọi người sẽ phải gọi mình với cái tên đầy thân thương "Lương Y"🤣', '0987654321'),
-        new Hocsinh('26', 'Trịnh Thị Khánh Ly', '05/01/2006', 'url("footage/hocsinh_footage/26.jpg")', "Don't give up on your dreams. Keep sleeping...", '0987654321'),
-        new Hocsinh('27', 'Lưu Tuấn Mạnh', '10/07/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('28', 'Nghiêm Thị Nghĩa', '07/09/2006', 'url("footage/hocsinh_footage/28.jpg")', '"Khi tất cả mọi thứ dường như chống lại bạn, hãy nhớ rằng máy bay cất cánh được nhờ ngược chiều gió" </br>Nhớ nhé 💚', '0987654321'),
-        new Hocsinh('29', 'Ngô Phúc Nguyên', '30/10/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('30', 'Trần Quang Nhật', '21/06/2006', 'url("footage/hocsinh_footage/30.JPG")', "I don't care what society says. I've never regretted doing anything. I will survive and do what I want to.", '0987654321'),
-        new Hocsinh('31', 'Trần Linh Nhi', '01/03/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('32', 'Hồ Thị Thu Phương', '10/12/2006', 'url(" ")', '"Ai cũng là thiên tài. Nhưng nếu bạn đánh giá một con cá qua khả năng leo cây của nó thì nó sẽ sống cả đời tin rằng mình là kẻ ngu ngốc" </br>-Albert Einstein- ', '0987654321'),
-        new Hocsinh('33', 'Hồ Thị Quyên', '16/06/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('34', 'Nguyễn Hữu Tài', '25/01/2006', 'url("footage/hocsinh_footage/34.jpeg")', 'No risk no story', '0987654321'),
-        new Hocsinh('35', 'Nguyễn Phi Tài', '02/04/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('36', 'Trần Ngọc Tài', '10/10/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('37', 'Hoàng Danh Thái', '07/12/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('38', 'Hoàng Minh Thư', '26/05/2006', 'url(" ")', 'slogan', '0987654321'),
-        new Hocsinh('39', 'Hồ Thị Thư', '24/01/2006', 'url("footage/hocsinh_footage/39.jpg")', 'Thời niên thiếu không thể quay lại ấy…', '0987654321'),
-        new Hocsinh('40', 'Phan Phương Thúy', '11/02/2006', 'url(" ")', 'Hãy tin vào bản thân mình và không bao giờ từ bỏ giấc mơ của mình', '0987654321'),
-        new Hocsinh('41', 'Dương Bảo Trâm', '08/08/2006', 'url("")', 'slogan', '0987654321'),
-        new Hocsinh('42', 'Nguyễn Huyền Trang', '15/12/2006', 'url("")', 'slogan', '0987654321'),
-        new Hocsinh('43', 'Đàm Minh Tuấn', '12/03/2006', 'url("footage/hocsinh_footage/43.JPG")', '"Những thay đổi đơn thuần về lượng, đến một mức độ nhất định, sẽ chuyển hóa thành những sự khác nhau về chất "</br>  -Ph.Ăng-ghen-', '0987654321'),
-        new Hocsinh('44', 'Nguyễn Như Tuệ', '05/02/2006', 'url("")', 'slogan', '0987654321'),
-        new Hocsinh('45', 'Nguyễn Thị Thúy Xuân', '01/08/2006', 'url("")', 'slogan', '0987654321'),
+        new Hocsinh('1', 'Nguyễn Thuận An', '19/05/2006', 'url("footage/hocsinh_footage/1.jpg")', 'a', 'a', '0a', 'a'),
+        new Hocsinh('2', 'Lê Bùi Trâm Anh', '28/09/2006', 'url("footage/hocsinh_footage/2.png")', 'Dù có sai nhưng nếu có bản lĩnh thì sai cũng thành đúng. Thế giới này chỉ công nhận kẻ mạnh, không chấp nhận kẻ yếu', 'https://www.facebook.com/le.b.anh.7359?mibextid=LQQJ4d', '0912618183', 'a'),
+        new Hocsinh('3', 'Nguyễn Quỳnh Anh', '08/12/2006', 'url("footage/hocsinh_footage/3.jpg")', 'Đậu NV1 điểm cao🍀🍀🍀', 'a', '0a', 'a'),
+        new Hocsinh('4', 'Hoàng Văn Chí', '08/10/2006', 'url("footage/hocsinh_footage/4.jpg")', 'Yêu lớp', 'https://www.facebook.com/profile.php?id=100024156893457&mibextid=kFxxJD', '0352607531', 'chih76186@gmail.com'),
+        new Hocsinh('5', 'Phạm Mạnh Cường', '09/09/2006', 'url("footage/hocsinh_footage/5.jpg")', 'Thành cựu học sinh rồi nha cả vườn', 'a', '0a', 'a'),
+        new Hocsinh('6', 'Trần Thị Thùy Dung', '26/10/2006', 'url("footage/hocsinh_footage/6.jpg")', 'Chẳng sợ gì hơn là cô đơn', 'https://www.facebook.com/profile.php?id=100073957577613&mibextid=ZbWKwL', '0586558915', 'gsvshgsvs@gmail.com'),
+        new Hocsinh('7', 'Đào Xuân Anh Dũng', '10/1/2006', 'url("footage/hocsinh_footage/7.jpg")', 'Yêu bạn:))))', 'https://www.facebook.com/daoxuananhdung?mibextid=LQQJ4d', '0328162805', 'daoxuananhdung@gmail.com'),
+        new Hocsinh('8', 'Phan Đăng Dũng', '29/11/2006', 'url("footage/hocsinh_footage/8.jpg")', '"Bước vào đời tay trắng cùng lắm lại trở về với trắng tay </br>Khi ta yêu cuộc đời, cuộc đời cũng sẽ yêu ta đắm say"', 'https://www.facebook.com/profile.php?id=100089653197732', '0365164726', 'phandangyeah@gmail.com', 'https://www.youtube.com/@doublep4536'),
+        new Hocsinh('9', 'Trần Quang Dũng', '22/02/2006', 'url("footage/hocsinh_footage/9.jpg")', 'Học - Học nữa - Học mãi', 'https://www.facebook.com/profile.php?id=100067477338146&mibextid=ZbWKwL', '0387374428', 'dtranquang02@gmail.com'),
+        new Hocsinh('10', 'Phạm Thị Xuân Đan', '17/04/2006', 'url("footage/hocsinh_footage/10.jpg")', '"Đời là những chuyến đi</br>Đi đúng đời sẽ đẹp"', 'https://www.facebook.com/linhdan.pham.1742006?mibextid=LQQJ4d', '0984767281', 'dan123nehaha@gmail.com'),
+        new Hocsinh('11', 'Vũ Bùi Thúy Hà', '07/05/2006', 'url("footage/hocsinh_footage/11.jpg")', 'Học - Học nữa - Học mãi', 'https://www.facebook.com/vubui.thuyha?mibextid=ZbWKwL', '0967322983', 'Gain070506@gmail.com'),
+        new Hocsinh('12', 'Hồ Xuân Hai', '20/09/2006', 'url("footage/hocsinh_footage/12.jpg")', 'a', 'a', '0a', 'a'),
+        new Hocsinh('13', 'Nguyễn Trường Hải', '11/4/2006', 'url("footage/hocsinh_footage/13.jpg")', 'Cùng nhau đi học, cùng nhau lớn', 'https://www.facebook.com/profile.php?id=100032368830594&mibextid=ZbWKwL', '0988580334', 'nguyentruonghai.com@gmail.com'),
+        new Hocsinh('14', 'Trần Nguyễn Hoàng Hải', '17/05/2006', 'url("footage/hocsinh_footage/14.jpg")', 'q', 'q', '0q', 'a'),
+        new Hocsinh('15', 'Nguyễn Thị Thu Hằng', '09/01/2006', 'url("footage/hocsinh_footage/15.jpg")', 'Hãy sống như hoa Hướng Dương, luôn hướng về phía Mặt Trời tỏa nắng.', 'https://www.facebook.com/ntthang0901', '0961523025', 'duongtichqc@gmail.com'),
+        new Hocsinh('16', 'Nguyễn Hồng Hạnh', '29/6/2006', 'url("footage/hocsinh_footage/16.jpg")', 'Có công mài sắt có ngày nên kim	', 'https://www.facebook.com/profile.php?id=100080820369750&mibextid=ZbWKwL', '0339825508', 'Honzhann2906@gmail.com'),
+        new Hocsinh('17', 'Trương Văn Hiệp', '28/07/2006', 'url("footage/hocsinh_footage/17.jpg")', 'Có Những Cảm Xúc Chúng Ta Chỉ Cảm Nhận Được Cho Đến Khi Rời Xa Nó', 'https://www.facebook.com/profile.php?id=100035099512414', '0342809530', 'hiep80411@gmail.com'),
+        new Hocsinh('18', 'Lê Huy Hiếu', '16/9/2006', 'url("footage/hocsinh_footage/18.jpg")', 'Tôi muốn giàu', 'https://www.facebook.com/profile.php?id=100052413280100', '0969270087', 'hieuu16092006@gmail.com'),
+        new Hocsinh('19', 'Hoàng Thị Thu Hương', '07/02/2006', 'url("footage/hocsinh_footage/19.jpg")', 'a', 'https://www.facebook.com/chinhi.thienhuong/', '0364371469', 'gaupanda2k3@gmail.com'),
+        new Hocsinh('20', 'Nguyễn Đăng Huy', '13/10/2006', 'url("footage/hocsinh_footage/20.jpg")', 'a', 'a', '0a', 'a'),
+        new Hocsinh('21', 'Nguyễn Đậu Quang Huy', '01/10/2006', 'url("footage/hocsinh_footage/21.png")', 'STEP  BY STEP - DAY BY DAY', 'a', '0a', 'ngqhuy1001@gmail.com'),
+        new Hocsinh('22', 'Trần Văn Khánh', '27/03/2006', 'url("footage/hocsinh_footage/22.jpeg")', 'Giàu vì bạn, sang vì vợ =)))', 'a', '0a', 'a'),
+        new Hocsinh('23', 'Thái Doãn Kiên', '18/11/2006', 'url("footage/hocsinh_footage/23.jpeg")', 'Bi chưa dừng đứng dậy </br> chưa có kết quả xin đừng dừng lại', 'https://www.facebook.com/profile.php?id=100070665421470&mibextid=LQQJ4d', '0961814319', 'kienthaidoan4@gmail.com'),
+        new Hocsinh('24', 'Ngô Phương Linh', '24/11/2006', 'url("footage/hocsinh_footage/24.jpg")', 'Mệt nào rùi cũng sẽ qua như cầu vồng sau cơn mưa í, chẳng phải rất đẹp sao. Hy vọng mình bây giờ hay sau này lun tươi cười, zui zẻ, bình yên và thật thành công nhé', 'https://www.facebook.com/profile.php?id=100071753696180', '0332051611', 'phuonglinh241106@gmail.com'),
+        new Hocsinh('25', 'Hồ Bá Lương', '06/01/2006', 'url("footage/hocsinh_footage/25.jpg")', '12 năm ăn học để rồi cố gắng đỗ nv1</br>Và lúc đỗ được ngành này</br>Mọi người sẽ phải gọi mình với cái tên đầy thân thương</br>"Lương Y"🤣', 'a', '0332346757', 'baluong0601@gmail.com'),
+        new Hocsinh('26', 'Trịnh Thị Khánh Ly', '05/01/2006', 'url("footage/hocsinh_footage/26.jpg")', "Don't give up on your dreams. Keep sleeping...", 'a', '0a', 'a'),
+        new Hocsinh('27', 'Lưu Tuấn Mạnh', '7/10/2006', 'url("footage/hocsinh_footage/27.jpg")', 'Tốc độ thành công nhanh hơn tốc độ già đi của bố mẹ', 'https://www.facebook.com/profile.php?id=100055664130300&mibextid=ZbWKwL', '0983807628', 'luutuanmanh07102006@gmail.com'),
+        new Hocsinh('28', 'Nghiêm Nghĩa', '09/07/2006', 'url("footage/hocsinh_footage/28.jpg")', '"Khi tất cả mọi thứ dường như chống lại bạn, hãy nhớ rằng máy bay cất cánh được nhờ ngược chiều gió" </br>Nhớ nhé 💚', 'Nghĩa Nghiêm', '0862786277', 'nghianghiem6@gmail.com'),
+        new Hocsinh('29', 'Ngô Phúc Nguyên', '30/10/2006', 'url("footage/hocsinh_footage/29.jpg")', 'Không phàn nàn, không giải thích!', 'https://www.facebook.com/profile.php?id=100079873676892', '0374814873', 'npn5979@gmail.com'),
+        new Hocsinh('30', 'Trần Quang Nhật', '21/06/2006', 'url("footage/hocsinh_footage/30.jpg")', "I don't care what society says. I've never regretted doing anything. I will survive and do what I want to.", 'a', '0a', 'a'),
+        new Hocsinh('31', 'Trần Linh Nhi', '03/01/2006', 'url("footage/hocsinh_footage/31.jpg")', '(chả biết viết gì)', 'https://www.facebook.com/profile.php?id=100082135999540&mibextid=LQQJ4d', '0971137504', 'a'),
+        new Hocsinh('32', 'Hồ Thị Thu Phương', '12/10/2006', 'url("footage/hocsinh_footage/32.jpg")', '"Ai cũng là thiên tài. Nhưng nếu bạn đánh giá một con cá qua khả năng leo cây của nó thì nó sẽ sống cả đời tin rằng mình là kẻ ngu ngốc" </br>-Albert Einstein-', 'https://www.facebook.com/profile.php?id=61552665020815&mibextid=ZbWKwL', '0981071401', 'a'),
+        new Hocsinh('33', 'Hồ Thị Quyên', '16/6/2006', 'url("footage/hocsinh_footage/33.jpg")', 'A1k47', 'https://www.facebook.com/quyen06er?mibextid=ZbWKwL', '0978535269', 'Quyenho950@gmail.com'),
+        new Hocsinh('34', 'Nguyễn Hữu Tài', '25/01/2006', 'url("footage/hocsinh_footage/34.jpeg")', 'No risk no story', 'https://www.facebook.com/profile.php?id=100084731051951&mibextid=LQQJ4d', '0369684637', 'nguyenhuutai25122006@gmail.com'),
+        new Hocsinh('35', 'Nguyễn Phi Tài', '02/04/2006', 'url("footage/hocsinh_footage/35.jpg")', 'a', 'a', '0a', 'a'),
+        new Hocsinh('36', 'Trần Ngọc Tài', '10/10/2006', 'url("footage/hocsinh_footage/36.jpg")', 'a', 'a', '0a', 'a'),
+        new Hocsinh('37', 'Hoàng Danh Thái', '12/07/2006', 'url("footage/hocsinh_footage/37.jpg")', 'ok', 'https://www.facebook.com/profile.php?id=100062670963312', '0971604746', 'thai9bqc@gmail.com'),
+        new Hocsinh('38', 'Hoàng Minh Thư', '26/05/2006', 'url("footage/hocsinh_footage/38.jpg")', '"Feel like Cinderella naega byeonhae"', 'https://www.facebook.com/h.m.t.2605', '0a', 'a'),
+        new Hocsinh('39', 'Hồ Thị Thư', '24/01/2006', 'url("footage/hocsinh_footage/39.jpg")', 'Thời niên thiếu không thể quay lại ấy…', 'a', '0393499180', 'thuh67647@gmail.com'),
+        new Hocsinh('40', 'Phan Phương Thuý', '02/11/2006', 'url("footage/hocsinh_footage/40.jpg")', 'Hãy tin vào bản thân mình và không bao giờ từ bỏ giấc mơ của mình', 'https://www.facebook.com/phuonggthuyy2912', '0969322792', 'phanphuongthuyyy@gmail.com'),
+        new Hocsinh('41', 'Dương Bảo Trâm', '08/08/2006', 'url("footage/hocsinh_footage/41.jpg")', 'a', 'a', '0a', 'a'),
+        new Hocsinh('42', 'Nguyễn Huyền Trang', '25/12/2006', 'url("footage/hocsinh_footage/42.jpg")', 'Thành công nhé!', 'https://www.facebook.com/profile.php?id=100035118379199', '0778573463', 'nguyentrang25122006@gmail.com'),
+        new Hocsinh('43', 'Đàm Minh Tuấn', '03/12/2006', 'url("footage/hocsinh_footage/43.jpg")', '"Những thay đổi đơn thuần về lượng, đến một mức độ nhất định, sẽ chuyển hóa thành những sự khác nhau về chất "</br>  -Ph.Ăng-ghen-', 'https://www.facebook.com/minhtuank47', '0865474657', 'damminhtuan2006@gmail.com', 'https://www.youtube.com/@minhtuan2119'),
+        new Hocsinh('44', 'Nguyễn Như Tuệ', '02/05/2006', 'url("footage/hocsinh_footage/44.jpg")', 'Thật ra á', 'https://www.facebook.com/tue.nhu.3705?mibextid=ZbWKwL', '0343971327', 'nhutue252006@gmail.com'),
+        new Hocsinh('45', 'Nguyễn Thị Thuý Xuân', '8/1/2006', 'url("footage/hocsinh_footage/45.jpg")', 'Sống là để tận hưởng và trải nghiệm', 'https://www.facebook.com/profile.php?id=100025906342514&mibextid=LQQJ4d', '0396899295', 'xuanhinh206@gmail.com'),
+        
     ];
 
     var next = document.getElementById("next");
@@ -62,6 +67,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var phone = document.getElementById("phone");
     var mail = document.getElementById("mail");
     var slogan = document.getElementById("slogan");
+    var fb = document.getElementById("fb");
+    var ytb = document.getElementById("ytb");
+    var ytb_btn = document.getElementById("ytb_btn");
     var undone = document.querySelectorAll(".undone");
     var code_contact = document.getElementById("code_contact");
     var form = document.getElementById("form");
@@ -107,7 +115,14 @@ document.addEventListener('DOMContentLoaded', function() {
         birth.innerHTML = avt[avt_main].birth;
         mail.innerHTML = avt[avt_main].mail;
         phone.innerHTML = avt[avt_main].phone;
-        slogan.innerHTML = avt[avt_main].slogan
+        slogan.innerHTML = avt[avt_main].slogan;
+        fb.href = avt[avt_main].fb;
+        if(avt[avt_main].ytb !== undefined){
+            ytb.href = avt[avt_main].ytb;
+            ytb_btn.style.display = 'block';
+        }else{
+            ytb_btn.style.display = 'none';
+        }
 
         if (window.matchMedia("(max-width: 740px)").matches){
             var h = document.getElementById("slogan").clientHeight + 277 - 221 + 60;
@@ -142,6 +157,14 @@ document.addEventListener('DOMContentLoaded', function() {
         mail.innerHTML = avt[avt_main].mail;
         phone.innerHTML = avt[avt_main].phone;
         slogan.innerHTML = avt[avt_main].slogan; 
+        fb.href = avt[avt_main].fb;
+        if(avt[avt_main].ytb != undefined){
+            ytb.href = avt[avt_main].ytb;
+            ytb_btn.style.display = 'flex';
+        }else{
+            ytb_btn.style.display = 'none';
+        }
+
 
         if (window.matchMedia("(max-width: 740px)").matches){
             var h = document.getElementById("slogan").clientHeight + 277 - 221 + 60;
