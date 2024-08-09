@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         new Hocsinh('16', 'Nguyễn Hồng Hạnh', '29/6/2006', 'url("footage/hocsinh_footage/16.jpg")', 'Có công mài sắt có ngày nên kim	', 'https://www.facebook.com/profile.php?id=100080820369750&mibextid=ZbWKwL', '0339825508', 'Honzhann2906@gmail.com'),
         new Hocsinh('17', 'Trương Văn Hiệp', '28/07/2006', 'url("footage/hocsinh_footage/17.jpg")', 'Có Những Cảm Xúc Chúng Ta Chỉ Cảm Nhận Được Cho Đến Khi Rời Xa Nó', 'https://www.facebook.com/profile.php?id=100035099512414', '0342809530', 'hiep80411@gmail.com'),
         new Hocsinh('18', 'Lê Huy Hiếu', '16/9/2006', 'url("footage/hocsinh_footage/18.jfif")', 'Tôi muốn giàu', 'https://www.facebook.com/profile.php?id=100052413280100', '0969270087', 'hieuu16092006@gmail.com'),
-        new Hocsinh('19', 'Hoàng Thị Thu Hương', '07/02/2006', 'url("footage/hocsinh_footage/19.jpg")', 'a', 'https://www.facebook.com/chinhi.thienhuong/', '0364371469', 'gaupanda2k3@gmail.com'),
+        new Hocsinh('19', 'Hoàng Thị Thu Hương', '07/02/2006', 'url("footage/hocsinh_footage/19.JPG")', 'a', 'https://www.facebook.com/chinhi.thienhuong/', '0364371469', 'gaupanda2k3@gmail.com'),
         new Hocsinh('20', 'Nguyễn Đăng Huy', '13/10/2006', 'url("footage/hocsinh_footage/20.jpg")', 'a', 'a', '0a', 'a'),
         new Hocsinh('21', 'Nguyễn Đậu Quang Huy', '01/10/2006', 'url("footage/hocsinh_footage/21.png")', 'STEP  BY STEP - DAY BY DAY', 'https://www.facebook.com/profile.php?id=100023832394538', '0378757359', 'ngqhuy1001@gmail.com'),
         new Hocsinh('22', 'Trần Văn Khánh', '27/03/2006', 'url("footage/hocsinh_footage/22.jpeg")', 'Giàu vì bạn, sang vì vợ =)))', 'https://www.facebook.com/tvk27080304', '0333328867', 'khanhhungcut27032006@gmail.com'),
