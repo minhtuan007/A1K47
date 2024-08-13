@@ -1,0 +1,112 @@
+@media (max-width: 740px){
+
+    #dir{
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        height: max-content;
+        width: 0px;    
+        transform: translateY(-100px);
+        transition: 0.5s;    
+    }
+
+    #navbar{
+        min-height: 48px;
+        transition: 0.5s;
+        z-index: 1;
+        position: relative;
+    }
+
+    #title{
+        display: flex;
+        color: white;
+        width: calc(100% - 96px);
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+
+    #logo{
+        display: block;
+        transition: 0.3s;
+    }
+
+    .dirItem{
+        margin-left: 5px;
+        font-size: 17px;
+        display: flex;
+    }
+
+    #menu_mobile{
+        height: 48px;
+        width: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 1s;
+        position: absolute;
+        right: 0;
+    }
+
+    #menu_mobile i{
+        transform: scale(1.3);
+    }
+
+    #content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #video{
+        height: 56.25vw;
+        /* height: 275px; */
+        width: 100%;
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    #frame{
+        height: 100%;
+        /* height: 275px; */
+        width: 100%;
+        transform: scale(0.95);
+        transform: translate(0px,0px);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 1);;
+    }
+
+    #frame iframe{
+        height: 100%;
+        /* height: 275px; */
+        width: 100%;
+        /* transform: scale(0.9);   */
+    }
+
+    #list{
+        justify-content: start;
+    }
+
+    .group{
+        margin-bottom: 15px;
+        transform: translate(0px,0px);
+    }
+
+    .group:nth-child(1){
+        margin-top: 10px;
+    }
+
+    .group_container{
+    width: 100%;
+    overflow-x: hidden ;
+    position: absolute;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    }
+}

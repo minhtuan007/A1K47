@@ -3,31 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoc Sinh</title>
-    
+    <title>Kho Video</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <base href="https://minhtuan007.github.io/A1K47/"> -->
+    <base href="https://minhtuan007.github.io/A1K47/">
     <link rel="stylesheet" href="./css/video.css" />
+    <link rel="stylesheet" href="./css/video_mobile.css" />
     <script src="./js/video.js"></script>  
 </head>
 <body>
-    <div class="container1">
-        <div class="navbar top-0 absolute w-full h-[48px]  z-10 flex ">
-            <div class="h-[48px] w-[48px] flex items-center justify-center">
-                <a href="index.html" class="p-1 box-border">
-                    <img id="logo" src="./footage/logok47a1.jpg" alt="Logo A1K47" class="h-[90%] w-[90%] rounded-full cursor-pointer">
+   <div class="container1">
+    <div id="navbar">
+        <div id="logo">
+            <a href="index.html" class="">
+                <img  src="./footage/logok47a1.jpg" alt="Logo A1K47" class="rounded-full cursor-pointer">
+            </a>
+        </div>
+        <div id="title">Kho video</div>
+        <ul id="dir" class="text-white">
+            <li class="dirItem"><a href="index.html">Trang chủ</a></li>
+            <!-- <li class="dirItem">
+                <a href="">
+                    Giáo viên
                 </a>
+            </li> -->
+            <li class="dirItem"><a href="hocsinh.html">Học sinh</a></li>
+            <li class="dirItem">
+                <a href="video.html">
+                    Kho video
+                </a>
+            </li>
+            <li class="dirItem">
+                <a href="https://drive.google.com/drive/u/1/folders/1VkH6B590yKot13S7mMvfdBLv5exg948a" target="_blank">
+                    Một số thứ khác
+                </a>
+            </li>
+        </ul>
+        <div id="menu_mobile">
+            <i class="fa-solid fa-bars text-white"></i>
+        </div>
+    </div>
+    <div id="content">
+        <div id="video">
+            <div id="frame">
+                 <iframe id='videoEmbeded' src="https://drive.google.com/file/d/1ULortLEeHaqWdkz0eTuogHyACM1CpuyQ/preview" width="" height="" frameborder="0"></iframe>
             </div>
-            <div class="h-full w-full flex items-center justify-center">
-                <ul class="flex text-white">
-                    <li class="mx-[10px]"><a href="index.html">Trang chủ</a></li>
-                    <li class="mx-[10px]"><a href="">Giáo viên</a></li>
-                    <li class="mx-[10px]"><a href="hocsinh.html">Học sinh</a></li>
-                    <li class="mx-[10px]"><a href="video.html">Kho ảnh, video</a></li>
-                    <li class="mx-[10px]"><a href="">Một số thứ khác</a></li>
-                </ul>
+        </div>
+        <div id="list">
+            <div class="group_container">
+            <ul class="group" > Tập Thể</ul>
+            <ul class="group" >Tổ 1</ul>
+            <ul class="group" >Tổ 2</ul>
+            <ul class="group" >Tổ 3</ul>
+            <ul class="group" >Tổ 4</ul>
+            <ul class="group" >Cá Nhân</ul>
+            
+            </div>
+            
+
+
+            <div class="hide tapthe">
+                <div class="back_name">
+                    <div class="home"><i class="fa-solid fa-house text-white"></i></div>
+                    <div class="name">Tập thể</div>
+                </div>
+                <div class="thumb_content">
+                    <div class="thumb" id="8">
+                        <img src="./footage/video_footage/8.jpg" alt="">
+                        <span>Nói không với bạo lực học đường</span>
+                    </div>    
+                </div>
+            </div>
+            <div class="hide to1">
+                <div class="back_name">
+                    <div class="home"><i class="fa-solid fa-house text-white"></i></div>
+                    <div class="name">Tổ 1</div>
+                </div>
+                <div class="thumb_content">
+                    <div class="thumb" id="1">
+                        <img src="./footage/video_footage/1.jpg" alt="">
+                        <span>Tấm cám 4.0</span>
+                    </div>
+                    <div class="thumb" id="2">
+                        <img src="./footage/video_footage/2.png" alt="">
+                        <span>An toàn giao thông</span>
+                    </div>
+                    <div class="thumb" id="3">
+                        <img src="./footage/video_footage/3.png" alt="">
+                        <span>Hai đứa trẻ</span>
+                    </div>
+                    <div class="thumb" id="4">
+                        <img src="./footage/video_footage/4.jpg" alt="">
+                        <span>Bảo vệ môi trường</span>
+                    </div>
+                    <div class="thumb" id="5">
+                        <img src="./footage/video_footage/5.jpg" alt="">
+                        <span>Đồi dứa 🍍🍍🍍</span>
+                    </div>    
+                </div>
+            </div>
+            <div class="hide to2">
+                <div class="back_name">
+                    <div class="home"><i class="fa-solid fa-house text-white"></i></div>
+                    <div class="name">Tổ 2</div>
+                </div>
+                <div class="thumb_content">
+                    <div class="thumb" id="6">
+                        <img src="./footage/video_footage/6.jpg" alt="">
+                        <span>Đền thờ nguyên tổ họ Hồ</span>
+                    </div>    
+                    <div class="thumb" id="7">
+                        <img src="./footage/video_footage/7.jpg" alt="">
+                        <span>Cây Nêu cách tân</span>
+                    </div>    
+                </div>
+            </div>
+            <div class="hide to3">
+                <div class="back_name">
+                    <div class="home"><i class="fa-solid fa-house text-white"></i></div>
+                    <div class="name">Tổ 3</div>
+                </div>
+                <div class="thumb_content">
+                    <div class="thumb" id="">
+                        <!-- <img src="" alt=""> -->
+                        <span></span>
+                    </div>    
+                </div>
+            </div>
+            <div class="hide to4">
+                <div class="back_name">
+                    <div class="home"><i class="fa-solid fa-house text-white"></i></div>
+                    <div class="name">Tổ 4</div>
+                </div>
+                <div class="thumb_content">
+                    <div class="thumb" id="">
+                        <!-- <img src="" alt=""> -->
+                        <span></span>
+                    </div>      
+                </div>
+            </div>
+            <div class="hide canhan">
+                <div class="back_name">
+                    <div class="home"><i class="fa-solid fa-house text-white"></i></div>
+                    <div class="name">Cá nhân</div>
+                </div>
+                <div class="thumb_content">
+                    <div class="thumb" id="9">
+                        <img src="./footage/video_footage/9.jpg" alt="">
+                        <span>Rượu và những người bạn</span>
+                    </div>    
+                </div>
             </div>
         </div>
     </div>
+   </div>
 </body>
 </html>

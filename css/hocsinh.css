@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&family=Bungee+Shade&family=Grey+Qo&family=League+Spartan:wght@100..900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&family=Bungee+Shade&family=Grey+Qo&family=League+Spartan:wght@100..900&family=Pacifico&family=Saira+Stencil+One&display=swap');
 :root{
     background-image: url(../footage/bg_img.jpg);
     background-repeat: no-repeat;
@@ -54,11 +55,13 @@ html, body {
     right:0px;   
 }
 .name{
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size:55px;  
+    
+  font-optical-sizing: auto;
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 60px;
+  /* color: white; */
 }
 .avt:nth-child(1){
     left:0px;
