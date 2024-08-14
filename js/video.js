@@ -15,6 +15,17 @@ var videoList = [
     new Video('7', 'https://www.youtube.com/embed/Xs6HE_1oibs?si=Ufvyu-6bNKTxpvnG'),
     new Video('8', 'https://www.youtube.com/embed/t7eNOOofFHc?si=6oxZlabA5rtyChe6'),
     new Video('9', 'https://drive.google.com/file/d/1ULortLEeHaqWdkz0eTuogHyACM1CpuyQ/preview'),
+    
+    new Video('10', 'https://drive.google.com/file/d/1B1s8wmktHQrraDWJf63H1KXvu8QqWQoM/view?usp=sharing'),
+    //thư gửi mẹ
+    
+    new Video('11', 'https://drive.google.com/file/d/1_RHlwG1ofjotRgoQ9Vm4fzmlP381REnt/view?usp=sharing'),
+//20-11
+    
+    new Video('12', 'https://drive.google.com/file/d/1SAi2wt83RA7k4cmPS0ENYf4uYp2NhCqD/view?usp=sharing'),
+    //văn nghệ
+    // new Video('13', 'https://drive.google.com/file/d/1ULortLEeHaqWdkz0eTuogHyACM1CpuyQ/preview'),
+    
 ]
 
 
