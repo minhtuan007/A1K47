@@ -200,9 +200,7 @@ html, body {
     transform: translateX(400px);
 }
 
-.thumb:last-child{
-    margin-bottom: 15px;
-}
+
 
 .thumb{
     height: 99px;
@@ -236,4 +234,9 @@ html, body {
 .thumb:hover{
     background-color: rgb(0, 0, 0);
     border-radius: 15px;
+}
+
+.thumb:last-child{
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }

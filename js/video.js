@@ -15,16 +15,13 @@ var videoList = [
     new Video('7', 'https://www.youtube.com/embed/Xs6HE_1oibs?si=Ufvyu-6bNKTxpvnG'),
     new Video('8', 'https://www.youtube.com/embed/t7eNOOofFHc?si=6oxZlabA5rtyChe6'),
     new Video('9', 'https://drive.google.com/file/d/1ULortLEeHaqWdkz0eTuogHyACM1CpuyQ/preview'),
-    
-    new Video('10', 'https://drive.google.com/file/d/1B1s8wmktHQrraDWJf63H1KXvu8QqWQoM/preview'),
-    //thư gửi mẹ
-    
+    new Video('10', 'https://drive.google.com/file/d/1B1s8wmktHQrraDWJf63H1KXvu8QqWQoM/preview'),    
     new Video('11', 'https://drive.google.com/file/d/1_RHlwG1ofjotRgoQ9Vm4fzmlP381REnt/preview'),
-//20-11
-    
     new Video('12', 'https://drive.google.com/file/d/1SAi2wt83RA7k4cmPS0ENYf4uYp2NhCqD/preview'),
-    //văn nghệ
-    // new Video('13', 'https://drive.google.com/file/d/1ULortLEeHaqWdkz0eTuogHyACM1CpuyQ/preview'),
+    new Video('13', 'https://drive.google.com/file/d/1ncNG92aNi6yNXD-FQx0ePBzEQVOZp7iA/preview'),
+    new Video('14', 'https://drive.google.com/file/d/1rnobWJgA8J7opnydmyB4WH3kQn1e44jV/preview'),
+    new Video('15', 'https://drive.google.com/file/d/1KoMT_jzmmR1v8AXT2NSn3duh1m2QLJQE/preview'),
+    
     
 ]
 
