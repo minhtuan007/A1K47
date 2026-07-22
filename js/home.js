@@ -11,18 +11,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }  
   var noibat = [
-    'url("footage/noibat/1.jpg")',
-    'url("footage/noibat/2.jpg")',
-    'url("footage/noibat/3.jpg")',
-    'url("footage/noibat/4.jpg")',
-    'url("footage/noibat/5.jpg")',
-    'url("footage/noibat/6.jpg")',
-    'url("footage/noibat/7.jpg")',
-    'url("footage/noibat/8.jpg")',
-    'url("footage/noibat/9.jpg")',
-    'url("footage/noibat/10.jpg")',
-    'url("footage/noibat/11.jpg")',
-    'url("footage/noibat/12.jpg")',
+    'url("footage/optimized/noibat/1.jpg")',
+    'url("footage/optimized/noibat/2.jpg")',
+    'url("footage/optimized/noibat/3.jpg")',
+    'url("footage/optimized/noibat/4.jpg")',
+    'url("footage/optimized/noibat/5.jpg")',
+    'url("footage/optimized/noibat/6.jpg")',
+    'url("footage/optimized/noibat/7.jpg")',
+    'url("footage/optimized/noibat/8.jpg")',
+    'url("footage/optimized/noibat/9.jpg")',
+    'url("footage/optimized/noibat/10.jpg")',
+    'url("footage/optimized/noibat/11.jpg")',
+    'url("footage/optimized/noibat/12.jpg")',
   ]
 
   document.getElementById("c3").style.backgroundImage = noibat[0];
@@ -61,9 +61,9 @@ document.addEventListener('DOMContentLoaded', function() {
   undone.forEach(function(undone) {
     undone.addEventListener('click', function() {
         document.querySelector(".notify").classList.add('hidden_notify');
-        document.getElementById("notify_text").innerHTML = 'Tính năng đang được hoàn thiện, bạn chờ nhé <3';
+        document.getElementById("notify_text").textContent = 'Tính năng đang được hoàn thiện, bạn chờ nhé <3';
         setTimeout(function() {
-            document.getElementById("notify_text").innerHTML = '';
+            document.getElementById("notify_text").textContent = '';
             document.querySelector(".notify").classList.remove('hidden_notify');
         }, 2000);
     });

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+npm-debug.log*
+.DS_Store
+Thumbs.db
+student-private.json
+private-data*.json
+data/*.plain.json

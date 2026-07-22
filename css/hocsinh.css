@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&family=Bungee+Shade&family=Grey+Qo&family=League+Spartan:wght@100..900&family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&family=Bungee+Shade&family=Grey+Qo&family=League+Spartan:wght@100..900&family=Pacifico&family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Saira+Stencil+One&display=swap');
 :root{
-    background-image: url(../footage/bg_img.jpg);
+    background-image: url(../footage/optimized/bg_img.jpg);
     background-repeat: no-repeat;
     background-size:cover ;
     background-position: bottom;
@@ -41,6 +38,7 @@ html, body {
     font-size: xx-large;
     /* 2 cái giống nhau, thêm vào để phù hợp trình duyệt */
     overflow-wrap: break-word;
+    white-space: pre-line;
     word-break: break-word;
     /* end  */
     align-items: center;
@@ -181,6 +179,103 @@ html, body {
 .info{
     width: 95%;
     margin-left: 40px;
+}
+
+.private-info-button,
+.private-lock-button {
+    margin-top: 14px;
+    padding: 6px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 8px;
+    color: white;
+    background: rgba(0, 0, 0, 0.28);
+    cursor: pointer;
+}
+
+.private-info-button:hover,
+.private-info-button:focus-visible,
+.private-lock-button:hover,
+.private-lock-button:focus-visible {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.private-info-panel {
+    margin-top: 12px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.private-dialog[hidden],
+.private-info-panel[hidden] {
+    display: none;
+}
+
+.private-dialog {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.72);
+}
+
+.private-dialog-card {
+    position: relative;
+    width: min(390px, 100%);
+    padding: 30px;
+    border-radius: 16px;
+    color: white;
+    background: #111827;
+    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.5);
+}
+
+.private-dialog-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    border: 0;
+    color: white;
+    background: transparent;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.private-unlock-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.private-unlock-form h2 {
+    margin: 0 0 6px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.private-unlock-form input {
+    width: 100%;
+    padding: 9px 10px;
+    border: 1px solid #9ca3af;
+    border-radius: 8px;
+    color: #111827;
+    background: white;
+}
+
+.private-unlock-form button[type="submit"] {
+    align-self: flex-start;
+    padding: 7px 16px;
+    border-radius: 8px;
+    color: #111827;
+    background: white;
+    cursor: pointer;
+}
+
+#private_password_status {
+    min-height: 24px;
+    margin: 0;
+    color: #fca5a5;
 }
 
 /* <div class="pic_container relative w-[calc(40%+20px)]  h-full flex flex-col items-center justify-center overflow-hidden "> */

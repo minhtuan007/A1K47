@@ -1,0 +1,19 @@
+{
+  "name": "a1k47",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website ky yeu A1K47",
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i css/tailwind.input.css -o css/tailwind.generated.css --minify",
+    "build:site": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/build-site.ps1",
+    "encrypt:private": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/encrypt-private-data.ps1",
+    "rekey:private": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/rekey-private-data.ps1",
+    "optimize:images": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/optimize-images.ps1",
+    "check": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/check-project.ps1",
+    "build": "npm run build:css && npm run check && npm run build:site",
+    "serve": "python -m http.server 8000 --bind 127.0.0.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
