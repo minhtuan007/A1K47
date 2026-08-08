@@ -1,29 +1,35 @@
 <!-- https://bit.ly/a1k47ql4 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com data:; img-src 'self' data:; frame-src https://www.youtube.com https://drive.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com data:; img-src 'self' data:; frame-src https://www.youtube.com https://drive.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
     <meta name="referrer" content="no-referrer">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoc Sinh</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/tailwind.generated.css" />
     <link rel="stylesheet" href="./css/hocsinh.css" />
     <link rel="stylesheet" href="./css/hocsinh_mobile.css" />
     <script defer src="./js/hocsinh.js"></script>
 
-    
+
 </head>
+
 <body class="relative">
     <div class="container1 z-[1]">
-            <!-- NavBar -->
+        <!-- NavBar -->
         <div class="navbar top-0 absolute w-full  z-10 flex ">
             <div class="logoA1 h-[48px] w-[48px] flex items-center justify-center">
                 <a href="index.html" class="p-1 box-border">
-                    <img id="logo" src="./footage/logok47a1.jpg" alt="Logo A1K47" class="h-[90%] w-[90%] rounded-full cursor-pointer">
+                    <img id="logo" src="./footage/logok47a1.jpg" alt="Logo A1K47"
+                        class="h-[90%] w-[90%] rounded-full cursor-pointer">
                 </a>
             </div>
             <div class="h-full w-full flex items-center justify-center max-[740px]:justify-start">
@@ -43,7 +49,8 @@
                         </a>
                     </li>
                     <li class=" mx-[10px]">
-                        <a href="https://drive.google.com/drive/u/1/folders/1VkH6B590yKot13S7mMvfdBLv5exg948a" target="_blank" rel="noopener noreferrer">
+                        <a href="https://drive.google.com/drive/u/1/folders/1VkH6B590yKot13S7mMvfdBLv5exg948a"
+                            target="_blank" rel="noopener noreferrer">
                             Một số thứ khác
                         </a>
                     </li>
@@ -53,51 +60,57 @@
                 <i class="fa-solid fa-bars text-white"></i>
             </div>
         </div>
-            <!-- End NavBar -->
-        
+        <!-- End NavBar -->
+
         <div class="main ">
             <div class="info_container ">
                 <div id="slogan" class="slogan ">
                 </div>
                 <div class="info h-1/2   text-white">
-                    <div id="name" class="name " >Nguyễn Thuận An</div>
-                    <div class="fb mt-5"><a target="_blank" rel="noopener noreferrer" id="fb">Facebook: <i class="text-blue-500 fa-brands fa-facebook"></i></a></div>
-                    <div id="ytb_btn" class="mt-2 hidden"><a target="_blank" rel="noopener noreferrer" id="ytb" >Youtube: <i class="ml-2 text-red-500 fa-brands fa-youtube"></i></a></div>
-                    <button id="private_info_button" class="private-info-button" type="button">Xem thêm thông tin</button>
+                    <div id="name" class="name ">Nguyễn Thuận An</div>
+                    <div class="fb mt-5"><a target="_blank" rel="noopener noreferrer" id="fb">Facebook: <i
+                                class="text-blue-500 fa-brands fa-facebook"></i></a></div>
+                    <div id="ytb_btn" class="mt-2 hidden"><a target="_blank" rel="noopener noreferrer" id="ytb">Youtube:
+                            <i class="ml-2 text-red-500 fa-brands fa-youtube"></i></a></div>
+                    <button id="private_info_button" class="private-info-button" type="button">Xem thêm thông
+                        tin</button>
                     <div id="private_info_panel" class="private-info-panel" hidden>
                         <div>Ngày sinh: <span id="private_birth"></span></div>
                         <div>Số điện thoại: <span id="private_phone"></span></div>
                         <div>Email: <span id="private_email"></span></div>
-                        <button id="private_lock_button" class="private-lock-button" type="button">Khóa thông tin</button>
+                        <button id="private_lock_button" class="private-lock-button" type="button">Khóa thông
+                            tin</button>
                     </div>
                 </div>
             </div>
-    
+
             <div class="pic_container  ">
                 <div class="avt_container slide relative w-[2220px]  flex items-center">
-    
+
                     <div id="avt_left_sec" class="avt  w-[420px] "></div>
                     <div id="avt_left" class="avt  w-[420px]"></div>
                     <div id="avt_main" class="avt   w-[420px]"></div>
                     <div id="avt_right" class="avt  w-[420px]"></div>
                     <div id="avt_right_sec" class="avt  w-[420px] "></div>
                 </div>
-    
-                <div  class="button flex h-max w-full pt-[30px] box-border relative cursor-pointer justify-around ">
-                    <button id="prev" class="bg-slate-50"><i class="fa-solid fa-arrow-left"></i></button>  
-                    <button id="next" class="bg-slate-50"><i class="fa-solid fa-arrow-right"></i></i></button>               
-    
+
+                <div class="button flex h-max w-full pt-[30px] box-border relative cursor-pointer justify-around ">
+                    <button id="prev" class="bg-slate-50"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="next" class="bg-slate-50"><i class="fa-solid fa-arrow-right"></i></i></button>
+
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div class="notify">
-       <span id="notify_text" class="text-nowrap "> </span>
-    </div> 
-    <div id="private_dialog" class="private-dialog" role="dialog" aria-modal="true" aria-labelledby="private_dialog_title" hidden>
+        <span id="notify_text" class="text-nowrap "> </span>
+    </div>
+    <div id="private_dialog" class="private-dialog" role="dialog" aria-modal="true"
+        aria-labelledby="private_dialog_title" hidden>
         <div class="private-dialog-card">
-            <button id="private_dialog_close" class="private-dialog-close" type="button" aria-label="Đóng">&times;</button>
+            <button id="private_dialog_close" class="private-dialog-close" type="button"
+                aria-label="Đóng">&times;</button>
             <form id="private_unlock_form" class="private-unlock-form">
                 <h2 id="private_dialog_title">Thông tin cá nhân</h2>
                 <label for="private_password">Nhập mật khẩu để xem</label>
@@ -108,19 +121,6 @@
         </div>
     </div>
     <div id="distance" class=" h-[0px] w-full"></div>
-    <footer class="dev  h-[55px] w-full bg-[#3c3b39] text-white flex flex-col justify-center items-center">
-        <div><span class="h-[25px]">DevBy</span></div>
-        <div class="h-[30px] flex text-nowrap">
-          <a href="https://www.facebook.com/minhtuank47" target="_blank" rel="noopener noreferrer" class="h-full flex ">
-            <img class="h-full" src="./footage/facebook-circle.png" />
-            <span class="h-full w-max">Minh Tuấn</span>
-          </a>
-          <a href="https://www.facebook.com/tnhh.17506" target="_blank" rel="noopener noreferrer" class="h-full flex mx-8">
-            <img class="h-full" src="./footage/facebook-circle.png" />
-            <span class="h-full w-max">TNHH</span>
-          </a>
-        </div>
-    </footer>  
 </body>
 
 </html>
