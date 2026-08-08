@@ -71,7 +71,7 @@
 
       .child{
         height: 30vh;
-        width: 380px;
+        width: 100%;
     }
 
     .container2{
@@ -98,20 +98,20 @@
     }
 
     .child:nth-child(1){
-        left:-760px;
+        left:-200%;
       }
       .child:nth-child(2){
-        left:-380px;
+        left:-100%;
       
       }
       .child:nth-child(3){
-        left:0px
+        left:0%
       }
       .child:nth-child(4){
-        left:380px;
+        left:100%;
       }
       .child:nth-child(5){
-        left:760px;
+        left:200%;
       }
 
       #slide_container{

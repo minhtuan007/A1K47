@@ -66,21 +66,21 @@ html, body {
     height: 90%;
 }
 .avt:nth-child(2){
-    left:300px;
+    left:450px;
     height: 90%;
 
 }
 .avt:nth-child(3){
-    left:600px;
+    left:900px;
     height:100%;
 }
 .avt:nth-child(4){
-    left:900px;
+    left:1350px;
     height: 90%;
 
 }
 .avt:nth-child(5){
-    left:1200px;
+    left:1800px;
     height: 90%;
 
 }
@@ -166,9 +166,9 @@ html, body {
     display: none;
 }
 
-/* <div class="info_container relative w-[calc(100%-40%-20px)] h-full flex flex-col "> */
+/* <div class="info_container relative w-[calc(100%-60%-20px)] h-full flex flex-col "> */
 .info_container{
-    width: calc(100% - 40% - 20px);
+    width: calc(100% - 60% - 20px);
     height: 100%;
     position:relative; 
     display: flex;
@@ -278,10 +278,10 @@ html, body {
     color: #fca5a5;
 }
 
-/* <div class="pic_container relative w-[calc(40%+20px)]  h-full flex flex-col items-center justify-center overflow-hidden "> */
+/* <div class="pic_container relative w-[calc(60%+20px)]  h-full flex flex-col items-center justify-center overflow-hidden "> */
 .pic_container{
     /* background-color: red; */
-    width: calc(40% + 20px);
+    width: calc(60% + 20px);
     height: 100%;
     position: relative;
     display: flex;
